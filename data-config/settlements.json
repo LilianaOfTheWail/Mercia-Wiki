@@ -1,0 +1,18 @@
+{
+  "settlements": [
+    {
+      "name": "Dawnbury",
+      "metadata": {
+        "tags": "Glowstowe, Settlements",
+        "location": "Duchy of Weststead"
+      }
+    },
+    {
+      "name": "Ste. Chritine-aux-forêts",
+      "metadata": {
+        "tags": "Settlements, Carvagne",
+        "location": "Carvagne"
+      }
+    }
+  ]
+}
