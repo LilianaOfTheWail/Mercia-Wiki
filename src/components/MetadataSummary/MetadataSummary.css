@@ -1,0 +1,68 @@
+.metadata-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+  background: rgba(18, 16, 24, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.4rem;
+  padding: 1.5rem;
+  box-shadow: 0 18px 48px -28px rgba(0, 0, 0, 0.8);
+}
+
+.metadata-summary__header {
+  margin-bottom: 1.1rem;
+}
+
+.metadata-summary__title {
+  margin: 0;
+  color: #f7e7d2;
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.metadata-summary__image-card {
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 1.2rem;
+}
+
+.metadata-summary__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.metadata-summary__properties {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.metadata-summary__property {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+}
+
+.metadata-summary__property-key {
+  font-size: 0.78rem;
+  color: #b8a88a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.metadata-summary__property-value {
+  color: #e6d8c1;
+  font-size: 1rem;
+  line-height: 1.55;
+}

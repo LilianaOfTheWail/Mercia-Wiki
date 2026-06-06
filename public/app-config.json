@@ -1,0 +1,5 @@
+[
+  {"key": "overview", "label": "Overview"},
+  {"key": "kingdoms", "label": "Kingdoms", "dataSource": "kingdoms"},
+  {"key": "characters", "label": "Characters", "dataSource": "characters"}
+]

@@ -1,0 +1,120 @@
+.lateral-bar {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  max-width: 260px;
+  background: rgba(17, 17, 23, 0.94);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f2e6d5;
+  padding: 1.5rem 1rem;
+  transition: width 0.28s ease, opacity 0.28s ease;
+}
+
+.lateral-bar.collapsed {
+  width: 84px;
+  min-width: 84px;
+  max-width: 84px;
+  opacity: 0.96;
+}
+
+.lateral-bar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.lateral-bar__title {
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #d8c3a5;
+}
+
+.lateral-bar__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #d8c3a5;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.lateral-bar__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lateral-bar__link {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: #e7d9c1;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  text-align: left;
+}
+
+.lateral-bar__link:hover,
+.lateral-bar__link.active {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(215, 125, 90, 0.35);
+}
+
+.lateral-bar__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lateral-bar.collapsed .lateral-bar__title,
+.lateral-bar.collapsed .lateral-bar__label {
+  display: none;
+}
+
+.lateral-bar__nested-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  padding-left: 0.25rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lateral-bar__nested-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.lateral-bar__nested-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.72rem 0.95rem;
+  border: 1px solid transparent;
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.02);
+  color: #e7d9c1;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.lateral-bar__nested-link:hover,
+.lateral-bar__nested-link.active {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(215, 125, 90, 0.25);
+}
+
+.lateral-bar.collapsed .lateral-bar__toggle {
+  transform: rotate(180deg);
+}
