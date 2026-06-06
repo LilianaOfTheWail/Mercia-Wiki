@@ -10,20 +10,14 @@
       }
     },
     {
-      "name": "Lady Eadgyth",
+      "name": "Marianne Laflèche",
       "metadata": {
-        "title": "Duchess of Weststead",
-        "tags": "Glowstowe, Characters, Nobility",
-        "house": "House of Twilight",
-        "status": "Alive"
-      }
-    },
-    {
-      "name": "Lord Oswin of Eaststead",
-      "metadata": {
-        "title": "Duke of Eaststead",
-        "tags": "Duchy of Eaststead, Characters, Nobility",
-        "house": "House of Sterling",
+        "race": "Human",
+        "gender": "Female",
+        "pronouns": "She/Her",
+        "title": "Baroness of Ste. Christine-aux-forêts",
+        "tags": "Carvagne, Characters",
+        "house": "House Laflèche",
         "status": "Alive"
       }
     }
