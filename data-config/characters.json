@@ -18,7 +18,8 @@
         "title": "Baroness of Ste. Christine-aux-forêts",
         "tags": "Carvagne, Characters",
         "house": "House Laflèche",
-        "status": "Alive"
+        "status": "Alive",
+        "image": "assets/characters/marianne-lafleche.jpg"
       }
     }
   ]
