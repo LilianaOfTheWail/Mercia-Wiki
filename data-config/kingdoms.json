@@ -103,9 +103,12 @@
                             "key": "Characters",
                             "query": {
                                 "domain": "characters",
-                                "shouldInclude": [
-                                    "Duchy of Eaststead"
-                                ],
+                                "filters": {
+                                    "shouldInclude": [
+                                        "Duchy of Eaststead"
+                                    ],
+                                    "shouldExclude": []
+                                },
                                 "dataFields": [
                                     "race",
                                     "gender",
