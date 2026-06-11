@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <title>Mercia Wiki</title>
+    <script>
+      (function () {
+        var currentUrl = window.location.href;
+        var redirectedPath = window.location.pathname + window.location.search + window.location.hash;
+        var basePath = '/Mercia-Wiki/';
+
+        if (redirectedPath.indexOf(basePath) === 0) {
+          window.location.replace(basePath + '?path=' + encodeURIComponent(redirectedPath));
+          return;
+        }
+
+        window.location.replace(basePath + '?path=' + encodeURIComponent(currentUrl));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
