@@ -6,7 +6,10 @@
         "title": "Monarch of Glowstowe",
         "tags": "Glowstowe, Characters, Royalty, Duchy of Eaststead",
         "house": "House of Dawn",
-        "status": "Alive"
+        "status": "Alive",
+        "race": "Dwarf",
+        "gender": "Male",
+        "pronouns": "He/Him"
       }
     },
     {
