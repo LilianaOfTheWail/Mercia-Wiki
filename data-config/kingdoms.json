@@ -101,7 +101,18 @@
                     "sections": [
                         {
                             "key": "Characters",
-                            "query": "/data-config/characters.json"
+                            "query": {
+                                "domain": "characters",
+                                "shouldInclude": [
+                                    "Duchy of Eaststead"
+                                ],
+                                "dataFields": [
+                                    "race",
+                                    "gender",
+                                    "pronouns",
+                                    "titles"
+                                ]
+                            }
                         }
                     ]
                 },
