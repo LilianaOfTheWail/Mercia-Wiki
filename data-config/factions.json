@@ -2,18 +2,164 @@
     "factions": [
         {
             "name": "The Bibliotheca of Ages",
-            "metadata": {},
-            "sections": []
+            "metadata": {
+                "Emblem": "All members of the bibliotheca carry a pendant with an eye encased in a regular heptagram, wether hidden or not depends on their office",
+                "Vestments": "Official acting members of the bibliotheca wear cerulean robes, dyed with cobalt and often trimmed in gold",
+                "Leader/s": "Most people even within the Bibliotheca do not know the bibliothecarians by name, but know there are 7 powerful mages ruling the bibliotheca from the shadows."
+            },
+            "sections": [
+                {
+                    "key": "History",
+                    "content": "The Bibliotheca of Ages is the last standing guild in the land of Mercia. It was formed in the year 372 A.F.L. with the signage of [[The Accords of Fendras]] between the major kingdoms, the burgeoning [[Church of Twilight]] and the larger surviving guilds after the [[Catarinian Crusades]]. The remaining guilds joined forces to form the bibliotheca, to fulfill their obligations under the accords and protect the [[mageborn]].",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        },
+                        {
+                            "name": "Church of Twilight",
+                            "url": "/factions/the-church-of-twilight"
+                        },
+                        {
+                            "name": "Catarinian Crusades",
+                            "url": "/miscelaneous/the-catarinian-crusades"
+                        },
+                        {
+                            "name": "mageborn",
+                            "url": "/guides/mageborn"
+                        }
+                    ]
+                },
+                {
+                    "key": "Organization",
+                    "content": "The Bibliotheca of Ages is a very distributed organization in the day to day management of the different libraries dispersed throughout the continent. Each library is managed by a <i>Curator of Philosopha Sublimatio</i>, furthering the goals of the elusive mages above them, the <i>Bibliothecarians of the Aevum.</i>\n\nBelow the greater mages of the bibliotheca, the circle a mage has mastered determins their rank. Those who have mastered the third circle are granted the title of <i>Archivist of the Primus Hypothesis</i>, while the rest of the mages that are considered adult carry the title of <i>Concierge of the Arcanum Scriptorum</i>.\n\nSince the Bibliotheca is first and formost — if in appearance only — an institution of learning and caring for mageborn, most libraries are structured like a school, with the archives and classrooms in the lower floors and a number of appartments in the upper floors. In some cities where a larger library is impossible, the bibliotheca provides lodging for students outside of their libraries in favour of the arcane laboratoriums and other facilities."
+                },
+                {
+                    "key": "The Forfeiture Rule",
+                    "content": "One of the laws established by [[The Accords of Fendras]] makes any mageborn of noble birth ineligible to inherit titles or own any land. It has caused a myriad of problems for many families and in some instances been used for marriable nullities in order to generate new heirs.",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        }
+                    ]
+                },
+                {
+                    "key": "Mageborn Conscription",
+                    "content": "Another law established by [[The Accords of Fendras]]. By order of this law, the Bibliotheca has not only the authority but also the responsability to conscript any mageborn. There are a number of itinerant mages that traverse the continent in search for mageborn to bring to the Bibliotheca. The inherent danger untutored mageborn present to the common folk has historically been enough for people to surrender their children to the mage guild, but there are a number of historical incidents of parents hiding their child's condition, often with disastrous results.",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        }
+                    ]
+                },
+                {
+                    "key": "The Principle of Equal Opportunity",
+                    "content": "The third major law established by [[The Accords of Fendras]] is that of equal opportunity, mandating that whenever the Bibliotheca offers a service to one crown it must offer the same services to every other kingdom for the same price. This was done in order to avoid a sorcerer king by proxy, and it has shaped the ways in which the bibliotheca interfaces with nobility across Mercia.",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        }
+                    ]
+                },
+                {
+                    "key": "Maesters of the Bibliotheca",
+                    "content": "At around the turn of the seventh century, the figure of the Maester became well entrenched in the society of the continent. As a result of the principl of Equal Opportunity, the Bibliotheca lent some mages to the crowns, but as time went on, a number of civil wars gave the bibliothecarians the idea of expanding this figure of the \"envoy\" extended beyond crowns and into nobility. It also gave the nobles spurned by the forfeiture rule an opportunity to reclaim their heirs as Maesters.\n\nA maester is an envoy of the bibliotheca that provides spellcasting and archival services to a noble family, they also offer the services of the bibliotheca in the purchase of magical artifacts or greater spells. Maesters usually hold some sort of loyalty to the family they serve, as the title is usually lifelong, but they also serve as spies and informants for the Bibliotheca."
+                },
+                {
+                    "key": "Notable Members",
+                    "query": {
+                        "domain": "characters",
+                        "filters": {
+                            "shouldInclude": [
+                                "Bibliotheca of Ages"
+                            ],
+                            "shouldExclude": []
+                        },
+                        "dataFields": [
+                            "race",
+                            "gender",
+                            "pronouns",
+                            "titles",
+                            "location"
+                        ]
+                    }
+                }
+            ]
         },
         {
-            "name": "The Chruch of Twilight",
+            "name": "The Church of Twilight",
             "metadata": {},
             "sections": [],
             "list": [
                 {
                     "name": "The Moon Templars",
                     "metadata": {},
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "History",
+                            "content": "Originally called *The Night's Inquisition*, the order was founded in the winter of 365 A.F.L, in the city of Cannalis, in the southern Astorian fields. With [[Catarina]] (later adapted to its gothic form Catherine) and her wife [[Alexandra Iulia of Kadesh]], who had witnessed first hand the horrors of what uncontrolled arcana running amok of her hometown had caused.\n\nCatarina adopted the title of Witch Hunter General while Alexandra took the title of High inquisitor. Their fervour attracted the attention of many common folk, specially those living in the northern cities, and soon the lines of the inquisition were many and it spanned several abbeys, their leaders taking the title of Inquisitors. The order moved in small squadrons, each led by a Witch Hunter Knight, a Maiden and a Priest, and accompanied by a small retinue of knight templars.\n\nAfter the death of the High Inquisitor and the destruction of the [[Moonlit Abbey]] in 369 A.F.L, Catarina became a fanatic completely devoted to her crusade of ending the witch kings of [[Takht-e Golha]] and [[Kadesh]] and her methods became even more extreme, quickly resorting to extreme torture and executions, and the order became a more fringe sector of the church, slowly losing some support even within the church.\n\nAfter the death of Caterina, the order fell to oblivion, though it was kept alive by her right hand woman, [[Syr Angela Columbina]], but it saw some resurgence after the [[Accords of Fendras]], when it became an integral tool of the church to keep oversight of the [[Bibliotheca]]. In the following centuries, the canonization of [[Saint Catherine]] kept the order relevant. It was also in this later time that it became the only knight order exclusively formed of women.",
+                            "links": [
+                                {
+                                    "name": "Catarina",
+                                    "url": "/entities/saint-catherine"
+                                },
+                                {
+                                    "name": "Alexandra Iulia of Kadesh",
+                                    "url": "/characters/alexandra-iulia-of-kadesh"
+                                },
+                                {
+                                    "name": "Moonlit Abbey",
+                                    "url": "/buildings/moonlit-abbey"
+                                },
+                                {
+                                    "name": "Takht-e Golha",
+                                    "url": "/kingdoms/takht-e-golha"
+                                },
+                                {
+                                    "name": "Kadesh",
+                                    "url": "/kingdoms/kadesh"
+                                },
+                                {
+                                    "name": "Syr Angela Columbina",
+                                    "url": "/characters/syr-angela-columbina"
+                                },
+                                {
+                                    "name": "Accords of Fendras",
+                                    "url": "/miscelaneous/the-accords-of-fendras"
+                                },
+                                {
+                                    "name": "Bibliotheca",
+                                    "url": "/factions/the-bibliotheca-of-ages"
+                                },
+                                {
+                                    "name": "Saint Catherine",
+                                    "url": "/entities/saint-catherine"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Notable Members",
+                            "query": {
+                                "domain": "characters",
+                                "filters": {
+                                    "shouldInclude": [
+                                        "Moon Templars"
+                                    ],
+                                    "shouldExclude": []
+                                },
+                                "dataFields": [
+                                    "race",
+                                    "gender",
+                                    "pronouns",
+                                    "titles",
+                                    "location"
+                                ]
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "The Veiled Vestals",
