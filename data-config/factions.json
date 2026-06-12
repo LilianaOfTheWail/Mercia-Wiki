@@ -1,0 +1,31 @@
+{
+    "factions": [
+        {
+            "name": "The Bibliotheca of Ages",
+            "metadata": {},
+            "sections": []
+        },
+        {
+            "name": "The Chruch of Twilight",
+            "metadata": {},
+            "sections": [],
+            "list": [
+                {
+                    "name": "The Moon Templars",
+                    "metadata": {},
+                    "sections": []
+                },
+                {
+                    "name": "The Veiled Vestals",
+                    "metadata": {},
+                    "sections": []
+                },
+                {
+                    "name": "The Knights of the Everburning Star",
+                    "metadata": {},
+                    "sections": []
+                }
+            ]
+        }
+    ]
+}
