@@ -32,18 +32,6 @@
                     ]
                 },
                 {
-                    "key": "Regions",
-                    "query": {
-                        "domain": "regions",
-                        "filters": {
-                            "shouldInclude": [
-                                "Glowstowe"
-                            ],
-                            "shouldExclude": []
-                        }
-                    }
-                },
-                {
                     "key": "Religious Affiliations",
                     "content": "The kingdom of Glowstowe has a very deep relationship with the [[Church of Twilight]], and although the [[Denomination of the Three]] has gained some representation in the last decades, many still look at the statues of the first daughter with fear and superstition. The cult to any other deity is currently restricted within the kingdom, including the worship of the [[Pagan Gods of Astoria]], and specially the [[Beliefs of Apostasy]].",
                     "links": [
@@ -104,6 +92,20 @@
                             "url": ""
                         }
                     ]
+                }
+            ],
+            "list": [
+                {
+                    "key": "Duchy of Eaststead",
+                    "dataSource": "/regions/duchy-of-eaststead"
+                },
+                {
+                    "key": "Duchy of Weststead",
+                    "dataSource": "/regions/duchy-of-weststead"
+                },
+                {
+                    "key": "Duchy of Southstead",
+                    "dataSource": "/regions/duchy-of-southstead"
                 }
             ]
         },

@@ -1,6 +1,6 @@
 {
     "religions": [
-    {
+        {
             "name": "The Cannon of Twilight",
             "metadata": {},
             "sections": [
@@ -21,6 +21,46 @@
                         ]
                     }
                 }
+            ],
+            "list": [
+                [
+                    {
+                        "name": "Mother Night",
+                        "dataSource": "/entities/mother-night"
+                    },
+                    {
+                        "name": "Mother Light",
+                        "dataSource": "/entities/mother-light"
+                    },
+                    {
+                        "name": "Saint Catalina",
+                        "dataSource": "/entities/saint-catalina"
+                    },
+                    {
+                        "name": "Saint Catherine",
+                        "dataSource": "/entities/saint-catherine"
+                    },
+                    {
+                        "name": "Saint Cecilia",
+                        "dataSource": "/entities/saint-cecilia"
+                    },
+                    {
+                        "name": "Saint Charity",
+                        "dataSource": "/entities/saint-charity"
+                    },
+                    {
+                        "name": "Saint Christine",
+                        "dataSource": "/entities/saint-christine"
+                    },
+                    {
+                        "name": "Saint Clara",
+                        "dataSource": "/entities/saint-clara"
+                    },
+                    {
+                        "name": "Saint Clementia",
+                        "dataSource": "/entities/saint-clementia"
+                    }
+                ]
             ]
         }
     ]
