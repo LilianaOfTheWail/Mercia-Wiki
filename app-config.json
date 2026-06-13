@@ -4,9 +4,25 @@
     "label": "Overview"
   },
   {
-    "key": "religions",
-    "label": "Religion",
-    "dataSource": "religions"
+    "key": "peoples-of-mercia",
+    "label": "Peoples of Mercia",
+    "children": [
+      {
+        "key": "characters",
+        "label": "Characters",
+        "dataSource": "characters"
+      },
+      {
+        "key": "factions",
+        "label": "Factions",
+        "dataSource": "factions"
+      },
+      {
+        "key": "noble-houses",
+        "label": "Noble Houses",
+        "dataSource": "noble-houses"
+      }
+    ]
   },
   {
     "key": "kingdoms",
@@ -19,13 +35,8 @@
     "dataSource": "settlements"
   },
   {
-    "key": "characters",
-    "label": "Characters",
-    "dataSource": "characters"
-  },
-  {
-    "key": "factions",
-    "label": "Factions",
-    "dataSource": "factions"
+    "key": "religions",
+    "label": "Religion",
+    "dataSource": "religions"
   }
 ]

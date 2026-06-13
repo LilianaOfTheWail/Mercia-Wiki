@@ -1,0 +1,22 @@
+{
+  "regions": [
+    {
+      "name": "Duchy of Eaststead",
+      "metadata": {
+        "kingdom": "Glowstowe"
+      }
+    },
+    {
+      "name": "Duchy of Weststead",
+      "metadata": {
+        "kingdom": "Glowstowe"
+      }
+    },
+    {
+      "name": "Duchy of Southstead",
+      "metadata": {
+        "kingdom": "Glowstowe"
+      }
+    }
+  ]
+}
