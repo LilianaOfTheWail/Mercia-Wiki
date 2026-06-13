@@ -3,19 +3,42 @@
     {
       "name": "Duchy of Eaststead",
       "metadata": {
-        "kingdom": "Glowstowe"
-      }
+        "kingdom": "Glowstowe",
+        "tags": "Glowstowe"
+      },
+      "sections": [
+        {
+          "key": "Characters",
+          "query": {
+            "domain": "characters",
+            "filters": {
+              "shouldInclude": [
+                "Duchy of Eaststead"
+              ],
+              "shouldExclude": []
+            },
+            "dataFields": [
+              "race",
+              "gender",
+              "pronouns",
+              "titles"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Duchy of Weststead",
       "metadata": {
-        "kingdom": "Glowstowe"
+        "kingdom": "Glowstowe",
+        "tags": "Glowstowe"
       }
     },
     {
       "name": "Duchy of Southstead",
       "metadata": {
-        "kingdom": "Glowstowe"
+        "kingdom": "Glowstowe",
+        "tags": "Glowstowe"
       }
     }
   ]

@@ -19,17 +19,29 @@
                         },
                         {
                             "name": "Duchy of Eaststead",
-                            "url": "/kingdoms/duchy-of-eaststead"
+                            "url": "/regions/duchy-of-eaststead"
                         },
                         {
                             "name": "Duchy of Weststead",
-                            "url": "/kingdoms/duchy-of-weststead"
+                            "url": "/regions/duchy-of-weststead"
                         },
                         {
                             "name": "Duchy of Southstead",
-                            "url": "/kingdoms/duchy-of-southstead"
+                            "url": "/regions/duchy-of-southstead"
                         }
                     ]
+                },
+                {
+                    "key": "Regions",
+                    "query": {
+                        "domain": "regions",
+                        "filters": {
+                            "shouldInclude": [
+                                "Glowstowe"
+                            ],
+                            "shouldExclude": []
+                        }
+                    }
                 },
                 {
                     "key": "Religious Affiliations",
@@ -92,42 +104,6 @@
                             "url": ""
                         }
                     ]
-                }
-            ],
-            "list": [
-                {
-                    "name": "Duchy of Eaststead",
-                    "metadata": {},
-                    "sections": [
-                        {
-                            "key": "Characters",
-                            "query": {
-                                "domain": "characters",
-                                "filters": {
-                                    "shouldInclude": [
-                                        "Duchy of Eaststead"
-                                    ],
-                                    "shouldExclude": []
-                                },
-                                "dataFields": [
-                                    "race",
-                                    "gender",
-                                    "pronouns",
-                                    "titles"
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "Duchy of Weststead",
-                    "metadata": {},
-                    "sections": []
-                },
-                {
-                    "name": "Duchy of Southstead",
-                    "metadata": {},
-                    "sections": []
                 }
             ]
         },
