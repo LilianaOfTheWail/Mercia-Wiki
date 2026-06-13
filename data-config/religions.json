@@ -3,64 +3,127 @@
         {
             "name": "The Cannon of Twilight",
             "metadata": {},
-            "sections": [
-                {
-                    "key": "Canonical Figures",
-                    "query": {
-                        "domain": "entities",
-                        "filters": {
-                            "shouldInclude": [
-                                "Canon of Twilight"
-                            ],
-                            "shouldExclude": []
-                        },
-                        "dataFields": [
-                            "Divine Status",
-                            "Titles",
-                            "Pantheon"
-                        ]
-                    }
-                }
-            ],
+            "sections": [],
             "list": [
-                [
-                    {
-                        "name": "Mother Night",
-                        "dataSource": "/entities/mother-night"
+                {
+                    "name": "Mother Night",
+                    "metadata": {
+                        "Divine Status": "Major Deity",
+                        "Titles": "The Protector of Souls, The Feverish Judge, The Nightbringer",
+                        "Alignment": "Lawful Good",
+                        "Pantheon": "Twilight",
+                        "Domains": "Grave, Order, War, Twilight, The Moon",
+                        "Nominal Saints": "Saint Catalina, Saint Clementia, Saint Catherine"
                     },
-                    {
-                        "name": "Mother Light",
-                        "dataSource": "/entities/mother-light"
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "Mother Night is one of the prime deities of the Canon of Twilight. Her original name in druntongue, Shar, has long been forgotten, and only in the most ancient of texts she is referred to by this name.\n\nIn contrast to her wife, Mother Night is generally associated with the rules of society and of nature itself, she is considered the judge of souls and the one who helps guide the souls of the departed towards their afterlives. The teachings of the Nightbringer are directed towards justice and protection, with her main commandment being \"Give mercy to those who deserve it, and strike swiftly those who don't\", and thus she has great importance in both the military foundation of the church and it's justice system. She is also invoked directly in funerary rites to guide the souls of the dead."
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "Mother Night is often depicted as a woman of white porcelain skin, her age inscrutable behind her stoic, cold stare and pursed lips. Her long black hair falling straight into a black straight dress sparsely adorned.\n\nWhen she is depicted in her humanoid-like form, she is often clad in silvery armor, holding a sword in one hand and a scale in the other. Otherwise, her most common symbols are the scales, the moon and the raven."
+                        }
+                    ]
+                },
+                {
+                    "name": "Mother Light",
+                    "metadata": {
+                        "Divine Status": "Major Deity",
+                        "Titles": "The Dawn Mother, The Dancing Beauty, The Lifebringer",
+                        "Alignment": "Chaotic Good",
+                        "Pantheon": "Twilight",
+                        "Domains": "Life, Light, Peace, Twilight, The Moon",
+                        "Nominal Saints": "Saint Christine, Saint Cecilia, Saint Charity"
                     },
-                    {
-                        "name": "Saint Catalina",
-                        "dataSource": "/entities/saint-catalina"
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "Mother Light is one of the prime deities of the Canon of Twilight. Her original name in druntongue, Selûne, has long been forgotten, and only in the most ancient of texts she is referred to by this name.\n\nWithin the pair of greater deities, Mother Light is generally considered the more nurturing and carefree of the two, and her role as the main motor behind growth and life place her in a fundamental role as the recipient of worship in rural communities, more focused on the day to day and prone to live peaceful lives, finding beauty in the small things and celebrating her holy light as she watches over her creatures and cares for peace and happiness.\n\nThose who decide to dedicate their lives to the service of the Dawn Mother generally do so within their communities, as spiritual leaders and healers, relieving whatever suffering they can, and showing compassion and kindness to those in need."
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "Mother Light is often depicted as a middle aged woman of tanned skin, with golden locks cascading over her shoulders. She usually wears a warm smile on her face and is dressed in white ethereal robes that flow along her curves. \n\nAlthough the humanoid-like representations of Mother Light are scarce, she is often signified by the sun, a white dove or a spike of wheat. Generally speaking, her cult is focused on life, fertility, beauty, peace, home and community."
+                        }
+                    ]
+                },
+                {
+                    "name": "Saint Catalina",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Virtue)",
+                        "Titles": "The Sword of Light",
+                        "Alignment": "Lawful",
+                        "Pantheon": "Twilight",
+                        "Domains": "War"
                     },
-                    {
-                        "name": "Saint Catherine",
-                        "dataSource": "/entities/saint-catherine"
+                    "sections": []
+                },
+                {
+                    "name": "Saint Catherine",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Virtue)",
+                        "Titles": "The Evening Judge",
+                        "Alignment": "Lawful",
+                        "Pantheon": "Twilight",
+                        "Domains": "Order"
                     },
-                    {
-                        "name": "Saint Cecilia",
-                        "dataSource": "/entities/saint-cecilia"
+                    "sections": []
+                },
+                {
+                    "name": "Saint Cecilia",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Virtue)",
+                        "Titles": "The Seer",
+                        "Alignment": "Chaotic",
+                        "Pantheon": "Twilight",
+                        "Domains": "Light"
                     },
-                    {
-                        "name": "Saint Charity",
-                        "dataSource": "/entities/saint-charity"
+                    "sections": []
+                },
+                {
+                    "name": "Saint Charity",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Virtue)",
+                        "Titles": "The Tormented",
+                        "Alignment": "Good",
+                        "Pantheon": "Twilight",
+                        "Domains": "Life"
                     },
-                    {
-                        "name": "Saint Christine",
-                        "dataSource": "/entities/saint-christine"
+                    "sections": []
+                },
+                {
+                    "name": "Saint Christine",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Virtue)",
+                        "Titles": "The Night's Martyr",
+                        "Alignment": "Good",
+                        "Pantheon": "Twilight",
+                        "Domains": "Peace"
                     },
-                    {
-                        "name": "Saint Clara",
-                        "dataSource": "/entities/saint-clara"
+                    "sections": []
+                },
+                {
+                    "name": "Saint Clara",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Authority)",
+                        "Titles": "The First Paladin",
+                        "Alignment": "Lawful",
+                        "Pantheon": "Twilight",
+                        "Domains": "The Moon"
                     },
-                    {
-                        "name": "Saint Clementia",
-                        "dataSource": "/entities/saint-clementia"
-                    }
-                ]
+                    "sections": []
+                },
+                {
+                    "name": "Saint Clementia",
+                    "metadata": {
+                        "Divine Status": "Saint (Angelic Virtue)",
+                        "Titles": "Guardian of the Crossroads, Guide to Lost Souls",
+                        "Alignment": "Good",
+                        "Pantheon": "Twilight",
+                        "Domains": "Grave"
+                    },
+                    "sections": []
+                }
             ]
         }
     ]
