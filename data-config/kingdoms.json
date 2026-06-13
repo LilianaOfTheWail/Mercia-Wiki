@@ -96,8 +96,8 @@
             ],
             "list": [
                 {
-                    "key": "Duchy of Eaststead",
-                    "dataSource": "/regions/duchy-of-eaststead",
+                    "name": "Duchy of Eaststead",
+                    "metadata": {},
                     "sections": [
                         {
                             "key": "Characters",
@@ -120,13 +120,13 @@
                     ]
                 },
                 {
-                    "key": "Duchy of Weststead",
-                    "dataSource": "/regions/duchy-of-weststead",
+                    "name": "Duchy of Weststead",
+                    "metadata": {},
                     "sections": []
                 },
                 {
-                    "key": "Duchy of Southstead",
-                    "dataSource": "/regions/duchy-of-southstead",
+                    "name": "Duchy of Southstead",
+                    "metadata": {},
                     "sections": []
                 }
             ]
