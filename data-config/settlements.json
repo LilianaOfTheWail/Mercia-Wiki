@@ -3,14 +3,14 @@
     {
       "name": "Dawnbury",
       "metadata": {
-        "tags": "Glowstowe, Settlements",
+        "tags": "Glowstowe",
         "location": "Duchy of Weststead"
       }
     },
     {
       "name": "Crepuscule",
       "metadata": {
-        "tags": "Settlements, Carvagne",
+        "tags": "Carvagne",
         "location": "Carvagne"
       }
     },
@@ -18,7 +18,7 @@
       "key": "ste-christine-aux-forets",
       "name": "Ste. Christine-aux-forêts",
       "metadata": {
-        "tags": "Settlements, Carvagne",
+        "tags": "Carvagne",
         "location": "Carvagne"
       },
       "sections": [

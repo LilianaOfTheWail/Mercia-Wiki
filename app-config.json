@@ -4,6 +4,11 @@
     "label": "Overview"
   },
   {
+    "key": "religions",
+    "label": "Religion",
+    "dataSource": "religions"
+  },
+  {
     "key": "kingdoms",
     "label": "Kingdoms",
     "dataSource": "kingdoms"
