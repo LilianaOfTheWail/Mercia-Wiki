@@ -121,7 +121,29 @@
                 },
                 {
                     "key": "Canon and Schisms",
-                    "content": ""
+                    "content": "The Church of Twilight follows the doctrines that form part of the [[Canon of Twilight]]. However, most of these dogmas have not remained consistent throughout the almost 10 centuries of the church.\n\nThe cults around the [[First Paladin]] started to gain a large following in the second century, some of the followers of the first paladin rejected her past mortalhood, convinced that she was a deity, though subservient to the mothers. This was one of the first schisms of the twilight, though the resulting church fell somewhat to obscurity. This schism caused the church to slightly obscure the features of the paladin that became more emblematic of the apostatic [[Cult of the Silver Huntress]].\n\nOriginating in the southern kingdoms, [[The Eclipse Apostasy]] posited that the mothers where in fact only one deity, this led to a culling within the church of anyone adscribing to these beliefs and the purging of whatever records explained the doctrine.\n\nAfter the Concordat of Asteenor, a new dogma has been introduced into the cannon, though it's highly controversial and it hasn't seen mainstream acceptance from the church. The Denomination of the Three, a canonical addition that threatens a new schism, adds a new deity to the pantheon, [[The Daughter]].",
+                    "links": [
+                        {
+                            "name": "Canon of Twilight",
+                            "url": "/religions/the-canon-of-twilight"
+                        },
+                        {
+                            "name": "First Paladin",
+                            "url": "/religions/saint-clara"
+                        },
+                        {
+                            "name": "Cult of the Silver Huntress",
+                            "url": "/religions/the-old-ways"
+                        },
+                        {
+                            "name": "The Eclipse Apostasy",
+                            "url": "/religions/the-eclipse-apostasy"
+                        },
+                        {
+                            "name": "The Daughter",
+                            "url": "/religions/the-daughter"
+                        }
+                    ]
                 },
                 {
                     "key": "Organization",
@@ -134,7 +156,26 @@
                     ]
                 },
                 {
-                    "key": "Orders of the Twilight"
+                    "key": "Orders of the Twilight",
+                    "content": "The Church of Twilight has several specialized orders. Most of them report directly to the evenmaidens or the queens of the [[diarchy]], the majority of these orders are more militaristic and openly known, though some of them act in the shadows and are unknown to most people.\n\n- [[The Moon Templars]]\n\n- [[The Knights of the Everburning Star]].\n\n- [[The Veiled Vestals]]",
+                    "links": [
+                        {
+                            "name": "diarchy",
+                            "url": "/kingdoms/diarchy-of-mu-sheng"
+                        },
+                        {
+                            "name": "The Moon Templars",
+                            "url": "/factions/the-moon-templars"
+                        },
+                        {
+                            "name": "The Knights of the Everburning Star",
+                            "url": "factions/the-knights-of-the-everburning-star"
+                        },
+                        {
+                            "name": "The Veiled Vestals",
+                            "url": "/factions/the-veiled-vestals"
+                        }
+                    ]
                 },
                 {
                     "key": "Crusades and the Inquisiton"
@@ -241,7 +282,12 @@
                 {
                     "name": "The Veiled Vestals",
                     "metadata": {},
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "The Veiled Vestals are a faction within the [[Church of Twilight]]. Unknown to most except the Evenmaidens, the Lady of Radiance and the Mistress of Stars. It is a secretive order of clerics committed to unravelling the deepest secrets of the church and safeguarding concealed artifacts along with this hidden knowledge.\n\nEvery member of the order takes an oath of silence, their voice never to be heard by anyone other than the highest charges of the church. New members induct themselves into the order, as codes and cyphers are one of the most important aspects of becoming part of the vestals, prospect acolytes must discover the order itself, through secret codes alluding to the existence of the order within temples and scripture in the oldest chapels and hermits of Twilight, decipher the secrets to the rituals of the Veil of Secrets and the invocation of the Vow of Muteness.\n\nThe Veiled Vestals lack proper temples and mostly hide in plain sight, keeping the rituals and hidden artifacts to long forgotten crypts, abandoned wings of abbeys and hidden basements. These chambers, known in the texts as *Sepulchres of Silence* are usually protected by ancient rituals, only unlocked by deciphering a code without using one's voice."
+                        }
+                    ]
                 },
                 {
                     "name": "The Knights of the Everburning Star",
