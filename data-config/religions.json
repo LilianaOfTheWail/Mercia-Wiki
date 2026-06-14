@@ -178,11 +178,12 @@
                     "sections": [
                         {
                             "key": "Lore",
-                            "content": ""
+                            "content": "Saint Cecilia was a Kadeshian woman who spearheaded the signage of the [[Accords of Fendras]]. She was the first Lady of Radiance, and architect of the [[Diarchy of Mù Shěng]] as it's known today, marrying her Mistress of Stars [[Zheng Jingyi]], a devout inquisitor using the popular story of [[Saint Catherine]] to legitimize her theocracy. It's said that Cecilia saw visions of the future and used it to amass power and to accomplish peace between the mageborn and the church, creating a purposefully one sided deal that skirted her ambitions. She was said to be pasionate and bolsterous and devoted to her wife with a fervor rivaling her faith.",
+                            "links": [{"name": "Accords of Fendras", "url": "/miscelaneous/accords-of-fendras"}]
                         },
                         {
                             "key": "Depictions",
-                            "content": ""
+                            "content": "There are enough depictions of Saint Cecilia to fill several books. Though her more modern representations tend to focus on her more regal appearance — wielding her holy rod and a diamond encrusted tiara — and her blind eyes said to shed tears of pure light, historical paintings — most of which she commissioned herself — are extremely amorous, wether embracing her wife or lounging on her lap. The common features in both of these are the flowing silk tunics, her sunkissed skin and her luscious long and wavy brunette mane."
                         }
                     ]
                 },
