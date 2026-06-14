@@ -157,12 +157,8 @@
                 },
                 {
                     "key": "Orders of the Twilight",
-                    "content": "The Church of Twilight has several specialized orders. Most of them report directly to the evenmaidens or the queens of the [[diarchy]], the majority of these orders are more militaristic and openly known, though some of them act in the shadows and are unknown to most people.\n\n- [[The Moon Templars]]\n\n- [[The Knights of the Everburning Star]].\n\n- [[The Veiled Vestals]]",
+                    "content": "The Church of Twilight has several specialized orders. Most of them report to the local clerical authority where they find themselves, the majority of these orders are more militaristic and openly known, though some of them act in the shadows and are unknown to most people.\n\n- [[The Moon Templars]]\n\n- [[The Knights of the Everburning Star]].\n\n- [[The Veiled Vestals]]",
                     "links": [
-                        {
-                            "name": "diarchy",
-                            "url": "/kingdoms/diarchy-of-mu-sheng"
-                        },
                         {
                             "name": "The Moon Templars",
                             "url": "/factions/the-moon-templars"
