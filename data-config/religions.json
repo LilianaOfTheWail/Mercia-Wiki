@@ -3,7 +3,22 @@
         {
             "name": "The Canon of Twilight",
             "metadata": {},
-            "sections": [],
+            "sections": [
+                {
+                    "key": "Twilight Worship",
+                    "content": "In Twilight doctrine, the canon refers to the commonly accepted dogmas of the [[Church of Twilight]]. It's centred around the two entities known as [[Mother Light]] and [[Mother Night]].\n\nThe main deific entities of the Canon are far older than the church, and they make their appearance, though distorted in every mayor religion known in the realm. They are considered so great, that few are the devout followers that dare worship them on a personal level on the daily.\n\nApart from the few occasions in which the mothers are the main foci of the rituals, the followers of the Canon tend to devout themselves to improve in the image of some saint. This however has a subjective aspect to it, as different cultures have a rather distinct interpretations of the same saints. And some of them (mostly the ones recently added to the canon) only are worshipped in certain regions.",
+                    "links": [
+                        {
+                            "name": "Mother Night",
+                            "url": "/religions/mother-night"
+                        },
+                        {
+                            "name": "Mother Light",
+                            "url": "/religions/mother-light"
+                        }
+                    ]
+                }
+            ],
             "list": [
                 {
                     "name": "Mother Night",
@@ -111,11 +126,11 @@
                                 },
                                 {
                                     "name": "The Night's Inquisition",
-                                    "url": "/religions/the-moon-templars"
+                                    "url": "/factions/the-moon-templars"
                                 },
                                 {
                                     "name": "Church of Twilight",
-                                    "url": "/religions/the-church-of-twilight"
+                                    "url": "/factions/the-church-of-twilight"
                                 }
                             ]
                         },
