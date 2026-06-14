@@ -249,11 +249,14 @@
                     "sections": [
                         {
                             "key": "Lore",
-                            "content": ""
+                            "content": "Saint Clara is one of the most mysterious figures of Twilight doctrine. There is candid debate on whether she ever was a mortal woman, something that even caused the first schism within the church. She is said to have been amonst the first settlers, though some versions of the myth portray her as waiting for the settlers at the shores of what would become [[Cannalis]]. There are a multitude of myths related to her, though which are true if any is impossible to tell:\n- She single handedly slain the great wyrm <i>Al'tiniyn Al'rahib</i> with her silver bow.\n- She went into the darkwoods, enamoured the queen of the dark forests ensuring the protection of the forests to the south.\n- She went into the wildlands and brough back several artifacts of the mothers.\n- She protected the city of flowers from a demonic host, pushing the devils into hell and crossing with them.\n\nRegardless of which of these stories is considered canonical at a given time, any of them ending with her death or chaining to the Auldwoods is enough to consider her a saint. Many become charmed by her heroic deeds and devote their lives to emulate the glorious figure.",
+                            "links": [
+                                {"name": "Cannalis", "url": "/kingdoms/cannalis"}
+                            ]
                         },
                         {
                             "key": "Depictions",
-                            "content": ""
+                            "content": "Most contemporary depictions of Saint Clara center her consecration or swearing to the ideals of the Twilight. She is often a faceless woman clad in silver armor with a sword and shield, though earlier depictions sometimes show her with a silver bow."
                         }
                     ]
                 },
