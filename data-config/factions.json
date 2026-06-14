@@ -92,7 +92,84 @@
         {
             "name": "The Church of Twilight",
             "metadata": {},
-            "sections": [],
+            "sections": [
+                {
+                    "key": "History",
+                    "content": "The church of twilight appeared very soon into the existance of the continent. Within the first fifty years, the martyrdom of [[Saint Christine]] and [[Saint Charity]] had already become fundational myths of the theology of the Twilight. The fact that several artifacts seeming to have miraculous powers related to the moon and the sun had been discovered, and the unearthing of several ruins of Mercadian origin that supported the deific dyad of night and day in figures that were mythical even before the first landing gave more weight to a burgeoning faith. The Church of Twilight was officially stablished near the end of the first century, but they were not particularly important amongst the many early cults until the turn of the second century, with the rise of several sorcerer kings.\n\nThe Church of Twilight became more militaristic under the influence of [[Saint Catherine]], a righteous zealot that attracted many common folk under the banner of the Catherinian Crusade, the first of four inquisitorial wars waged against the sorcerer kings. It was also at this time that the curch became a female centric order, in part due in response to the aristocracies' misoginy throughout the Astorian coasts and the southern kingdoms.\n\nAfter the signage of the [[Accords of Fendras]], ushered in part by the later known as [[Saint Cecilia]], first Lady of Radiance of the church, the more militaristic orders downsized and the church veered into expanding influence through their newfound hold on the populace.",
+                    "links": [
+                        {
+                            "name": "Saint Christine",
+                            "url": "/religions/saint-christine"
+                        },
+                        {
+                            "name": "Saint Charity",
+                            "url": "/religions/saint-charity"
+                        },
+                        {
+                            "name": "Saint Catherine",
+                            "url": "/religions/saint-catherine"
+                        },
+                        {
+                            "name": "Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        },
+                        {
+                            "name": "Saint Cecilia",
+                            "url": "/religions/saint-cecilia"
+                        }
+                    ]
+                },
+                {
+                    "key": "Canon and Schisms",
+                    "content": ""
+                },
+                {
+                    "key": "Organization",
+                    "content": "The Church of Twilight is a highly hierarchical organization. The <i>Lady of Radiance</i> and <i>Mistress of Stars</i> are the heads of the church, and rulers of the [[Diarchy of Mù Shěng]]. Each of the mayor kingdoms is the responsability of an <i>Evenmaiden</i>, who usually rules from a cathedral. They fraction their territories however they see fit, leaving each diocese in the hands of a <i>Canoness</i>. Each temple within a diocese has a different structure based on the size and function of the temple.\n\nAbbeys are controlled by an <i>Abbess</i>, priories are controlled by a <i>Prioress</i> and chapels fall under the purview of <i>Maidens</i>. Within each of these temples, the <i>Priests</i> fullfil more proselytizing roles, helping guide their communities in the ways of twilight, while the <i>Novices</i> do the more menial tasks while learning theology, philosophy and try to gain the favour of the mothers to be able to perform miracles.\n\nMen within the church can only fulfill the roles of novices and priests, or a roughly equivalent role within one of the militant orders.",
+                    "links": [
+                        {
+                            "name": "Diarchy of Mù Shěng",
+                            "url": "/kingdoms/diarchy-of-mu-sheng"
+                        }
+                    ]
+                },
+                {
+                    "key": "Orders of the Twilight"
+                },
+                {
+                    "key": "Crusades and the Inquisiton"
+                },
+                {
+                    "key": "Notable Members",
+                    "query": {
+                        "domain": "characters",
+                        "filters": {
+                            "shouldInclude": [
+                                "Church of Twilight"
+                            ],
+                            "shouldExclude": []
+                        },
+                        "dataFields": [
+                            "race",
+                            "gender",
+                            "pronouns",
+                            "titles"
+                        ]
+                    }
+                },
+                {
+                    "key": "Places of Interest",
+                    "query": {
+                        "domain": "buildings",
+                        "filters": {
+                            "shouldInclude": [
+                                "Church of Twilight"
+                            ],
+                            "shouldExclude": []
+                        }
+                    }
+                }
+            ],
             "list": [
                 {
                     "name": "The Moon Templars",

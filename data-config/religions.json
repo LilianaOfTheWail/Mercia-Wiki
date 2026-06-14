@@ -56,7 +56,40 @@
                         "Pantheon": "Twilight",
                         "Domains": "War"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "Saint Catalina Obsides was a woman from [[Astoria]] that partook in the [[Holy Wars of Therastur]]. She founded the militant order of the [[Knights of the Everburning Star]], sensing the growing overreaches of mageborn in the southern kingdoms and heralded to battle at the worst of the holy wars. She died a martyr in the battlefield fighting the hoards of undead in order to get the civilians out of the [[County of Dawnmire]].",
+                            "links": [
+                                {
+                                    "name": "Astoria",
+                                    "url": "/kingdoms/astoria"
+                                },
+                                {
+                                    "name": "Holy Wars of Therastur",
+                                    "url": "/miscelaneous/holy-wars-of-therastur"
+                                },
+                                {
+                                    "name": "Knights of the Everburning Star",
+                                    "url": "/factions/knights-of-the-everburning-star"
+                                },
+                                {
+                                    "name": "County of Dawnmire",
+                                    "url": "/kingdoms/county-of-dawnmire"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "As she was a renowned general in the war there are multiple portraits of her, which are usually used in her cult. Catalina was a dark skinned woman with white hair and golden eyes, that was said to be a saint from birth and took upon her to fight with extreme zealotry against the last sorcerer king of [[Noorderventer]].",
+                            "links": [
+                                {
+                                    "name": "Noorderventer",
+                                    "url": "/kingdoms/noorderventer"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Saint Catherine",
@@ -67,7 +100,56 @@
                         "Pantheon": "Twilight",
                         "Domains": "Order"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "Saint Catherine is the saint patron of law and justice, called now the evening judge she used to have another title in life, <i>The Witch Hunter General</i>. She was infamous amongst the mageborn in the time before the [[Accords of Fendras]], and founded the [[The Night's Inquisition]] later renamed 'The Moon Templars', one of the most notable institutions in the [[Church of Twilight]].\n\nShe is also the first recorded woman of power in the church to have married another clergywoman — though the practice predated the church — which would set a precedent for the organization.",
+                            "links": [
+                                {
+                                    "name": "Accords of Fendras",
+                                    "url": "/miscelaneous/accords-of-fendras"
+                                },
+                                {
+                                    "name": "The Night's Inquisition",
+                                    "url": "/religions/the-moon-templars"
+                                },
+                                {
+                                    "name": "Church of Twilight",
+                                    "url": "/religions/the-church-of-twilight"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "Saint Catherine is usually depicted in her holy armaments, all of which have been preserved as relics of the church, and while some of them were lost during the [[Holy Wars of Therastur]], there are extensive records of all of them, including her battleaxe [[Sorcerer's End]], her [[scales]], her [[Darksteel Armor]], her [[Inquisitor's Cloak]] and the crossbow [[Lookout]]. She was a dark skinned woman with a towering height of 6.5 feet but her face is usually hidden behind her cloak, though some of the older statues show her features.",
+                            "links": [
+                                {
+                                    "name": "Holy Wars of Therastur",
+                                    "url": "/miscelaneous/holy-wars-of-therastur"
+                                },
+                                {
+                                    "name": "Sorcerer's End",
+                                    "url": "TODO"
+                                },
+                                {
+                                    "name": "scales",
+                                    "url": "/miscelaneous/the-scales-of-saint-catherine"
+                                },
+                                {
+                                    "name": "Darksteel Armor",
+                                    "url": "/miscelaneous/darksteel-armor"
+                                },
+                                {
+                                    "name": "Inquisitor's Cloak",
+                                    "url": "/miscelaneous/cloak-of-the-moon"
+                                },
+                                {
+                                    "name": "Lookout",
+                                    "url": "/miscelaneous/lookout"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Saint Cecilia",
@@ -78,7 +160,16 @@
                         "Pantheon": "Twilight",
                         "Domains": "Light"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": ""
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Saint Charity",
@@ -89,7 +180,26 @@
                         "Pantheon": "Twilight",
                         "Domains": "Life"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "Saint Charity is the saint patron of the suffering. She was the first matriarch of the [[Church of Twilight]], and during the first years of [[Astoria]], she was said to perform great miracles taking the pain and suffering of the devout and placing it unto her shoulders. Her final miracle was the resurrection of her husband, which took her life, and was later the reason for her canonization.",
+                            "links": [
+                                {
+                                    "name": "Church of Twilight",
+                                    "url": "/religions/the-church-of-twilight"
+                                },
+                                {
+                                    "name": "Astoria",
+                                    "url": "/kingdoms/astoria"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "Saint Charity is usually depicted as an older woman covered in robes, always sitting cross legged and generally holding somebody to her chest. Most often than not this is representative of the figure of her husband."
+                        }
+                    ]
                 },
                 {
                     "name": "Saint Christine",
@@ -100,7 +210,16 @@
                         "Pantheon": "Twilight",
                         "Domains": "Peace"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "When the first settlers came to Mercia, it was said that they were godless and believed in the spirits of nature, such as the thunder or the rain. However when they fell prey to the demons that freely walked the land then, their gods didn't protect them, there was no way they could, as fiends burnt their farmlands and sequestered their kin to consume their flesh, the first settlers were left alone. One young woman, named Cristina was amongst these settlers, and in the darkest of night, while she prayed for anyone to listen she heard a voice. Their kind believed in deities but heard their voice in the wind and the fire, never deep within their souls, so Cristina was wary of the voice, thinking it another fiend going after her soul.\n\nThe voice was firm and calm, and devoid of any deceit, and told the young girl of an artifact that would ensue the survival of her people, would she wield it, but that warned her that to get it she would need to show devotion and bravery to the point of madness. She told her of the location, and with newfound hope, Cristina travelled through the mountains into the unknown, until she found a temple whereupon she found a shield.\n\nAfter a few weeks, as she returned to her homestead, she found the land ravaged, and the few survivors, cowering as they told her of the terrors bumping in the night, and how they wouldn't survive the night, as every day their dead woke up and rose alongside the fiends. However once night came, Cristina rose her golden shield, shinning with the light of a million stars and despite the wounds and burns overcoming her body, she rose her shield from dusk to dawn and repelled the demons.\n\nFor a year and a day, Cristina continued to rise her shield, as her kin fired arrows at the demons, and until the last one was gone, she never fell, nor did she show any doubt. But once her task was done, the pain finally overcame her. As her disfigured body exhaled her last breath, those around saw clearly an angel pick her soul out of her body and carry her towards the stars."
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "She is generally depicted as a young woman of dark hair and her body is generally covered, in order to hide the wounds of her sacrifice. Some gruesome depictions show her disfigured face and her burned hair. She is usually shown either fighting off demons or protecting people, but the only consistent feature is her silver shield."
+                        }
+                    ]
                 },
                 {
                     "name": "Saint Clara",
@@ -111,7 +230,16 @@
                         "Pantheon": "Twilight",
                         "Domains": "The Moon"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": ""
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Saint Clementia",
@@ -122,7 +250,22 @@
                         "Pantheon": "Twilight",
                         "Domains": "Grave"
                     },
-                    "sections": []
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "Saint Clementia is the saint of crossroads and travellers. She is said to be the angel that guides the lost souls to their afterlife. Saint Clementia is said to predate the discovery of the faith by the first settlers and believed to have been the one to guide them to the continent of Mercia, however, the most zealous postulate that she was an actual person, who guided the ships of the first settlers."
+                        },
+                        {
+                            "key": "Depictions",
+                            "content": "Saint Clementia is generally depicted as a middle aged woman with 3 pairs of angelic wings on her back that carries a crook on one hand and an oil lantern in the other. She is usually accompanied by a dog and wears the vestments of a simple cleric of the [[Church of Twilight]].",
+                            "links": [
+                                {
+                                    "name": "Church of Twilight",
+                                    "url": "/religions/the-church-of-twilight"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
