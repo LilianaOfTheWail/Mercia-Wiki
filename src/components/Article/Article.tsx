@@ -1,7 +1,7 @@
-import { ArticleProps } from '../../common/types'
-import MetadataSummary from '../MetadataSummary/MetadataSummary'
-import SectionSelector from '../SectionSelector/SectionSelector'
-import './Article.css'
+import { ArticleProps } from '../../common/types';
+import MetadataSummary from '../MetadataSummary/MetadataSummary';
+import SectionSelector from '../SectionSelector/SectionSelector';
+import './Article.css';
 
 function Article({ name, metadata, sections }: ArticleProps) {
   return (
@@ -12,20 +12,16 @@ function Article({ name, metadata, sections }: ArticleProps) {
 
       <div className="article-card__content">
         <div className="article-card__body">
-          {sections && sections.map(function (section) {
-            return (
-              <SectionSelector
-                key={section.key}
-                section={section}
-              />
-            )
-          })}
+          {sections &&
+            sections.map(function (section) {
+              return <SectionSelector key={section.key} section={section} />;
+            })}
         </div>
 
         <MetadataSummary name={name} metadata={metadata} />
       </div>
     </article>
-  )
+  );
 }
 
-export default Article
+export default Article;

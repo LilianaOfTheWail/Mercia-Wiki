@@ -1,11 +1,11 @@
-import React from 'react'
-import './AppTable.css'
-import { MetadataSummaryProps } from '../../../../common/types'
-import AppLink from '../../../AppLink/AppLink'
+import React from 'react';
+import './AppTable.css';
+import { MetadataSummaryProps } from '../../../../common/types';
+import AppLink from '../../../AppLink/AppLink';
 
 interface AppTableProps {
-  items: MetadataSummaryProps[]
-  fields: string[]
+  items: MetadataSummaryProps[];
+  fields: string[];
 }
 
 function AppTable({ items, fields }: AppTableProps) {
@@ -14,7 +14,9 @@ function AppTable({ items, fields }: AppTableProps) {
       <table className="app-table">
         <thead>
           <tr>
-            <th className="app-table__heading app-table__heading--name">Name</th>
+            <th className="app-table__heading app-table__heading--name">
+              Name
+            </th>
             {fields.map((field) => (
               <th key={field} className="app-table__heading">
                 {field}
@@ -40,7 +42,7 @@ function AppTable({ items, fields }: AppTableProps) {
         </tbody>
       </table>
     </div>
-  )
+  );
 }
 
-export default AppTable
+export default AppTable;

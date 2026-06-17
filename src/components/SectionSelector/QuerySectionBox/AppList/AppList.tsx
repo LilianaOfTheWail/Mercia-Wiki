@@ -1,10 +1,10 @@
-import React from 'react'
-import './AppList.css'
-import { MetadataSummaryProps } from '../../../../common/types'
-import AppLink from '../../../AppLink/AppLink'
+import React from 'react';
+import './AppList.css';
+import { MetadataSummaryProps } from '../../../../common/types';
+import AppLink from '../../../AppLink/AppLink';
 
 interface AppListProps {
-  items: MetadataSummaryProps[]
+  items: MetadataSummaryProps[];
 }
 
 function AppList({ items }: AppListProps) {
@@ -18,7 +18,7 @@ function AppList({ items }: AppListProps) {
         </li>
       ))}
     </ul>
-  )
+  );
 }
 
-export default AppList
+export default AppList;

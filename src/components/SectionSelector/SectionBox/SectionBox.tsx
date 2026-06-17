@@ -1,7 +1,7 @@
-import React from 'react'
-import './SectionBox.css'
-import { ArticleSectionProps } from '../../../common/types'
-import RichText from '../../RichText/RichText'
+import React from 'react';
+import './SectionBox.css';
+import { ArticleSectionProps } from '../../../common/types';
+import RichText from '../../RichText/RichText';
 
 function SectionBox({ title, content, links }: ArticleSectionProps) {
   return (
@@ -11,7 +11,7 @@ function SectionBox({ title, content, links }: ArticleSectionProps) {
       </div>
       <RichText text={content || ''} links={links} />
     </section>
-  )
+  );
 }
 
-export default SectionBox
+export default SectionBox;

@@ -10,13 +10,20 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   min-height: 100%;
 }
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top left, rgba(97, 74, 55, 0.16), transparent 28%),
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(97, 74, 55, 0.16),
+      transparent 28%
+    ),
     linear-gradient(180deg, #09090f 0%, #060608 100%);
   color: #e7d8c8;
 }

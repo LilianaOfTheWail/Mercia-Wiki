@@ -7,7 +7,9 @@
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   color: #f2e6d5;
   padding: 1.5rem 1rem;
-  transition: width 0.28s ease, opacity 0.28s ease;
+  transition:
+    width 0.28s ease,
+    opacity 0.28s ease;
 }
 
 .lateral-bar.collapsed {
@@ -66,7 +68,9 @@
   background: rgba(255, 255, 255, 0.03);
   color: #e7d9c1;
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
   text-align: left;
 }
 
@@ -124,7 +128,9 @@
   color: #e7d9c1;
   cursor: pointer;
   text-align: left;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .lateral-bar__nested-link:hover,

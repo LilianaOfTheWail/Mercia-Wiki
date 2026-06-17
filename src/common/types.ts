@@ -1,72 +1,72 @@
-import type { DataDomain, NavConfigItem, NavSectionKey } from './user-data'
+import type { DataDomain, NavConfigItem, NavSectionKey } from './user-data';
 
-export type { DataDomain, NavConfigItem, NavSectionKey }
+export type { DataDomain, NavConfigItem, NavSectionKey };
 
 export type ArticleLink = {
-    name: string
-    url: string
-}
+  name: string;
+  url: string;
+};
 
 export type DataViewQueryFilters = {
-    shouldInclude: string[]
-    shouldExclude: string[]
-}
+  shouldInclude: string[];
+  shouldExclude: string[];
+};
 
 export type DataViewQueryInput = {
-    domain: DataDomain
-    filters: DataViewQueryFilters
-    dataFields?: string[]
-}
+  domain: DataDomain;
+  filters: DataViewQueryFilters;
+  dataFields?: string[];
+};
 
 export type ArticleTextSection = {
-    key: string
-    content: string
-    links?: ArticleLink[]
-    query?: never
-}
+  key: string;
+  content: string;
+  links?: ArticleLink[];
+  query?: never;
+};
 
 export type ArticleQuerySection = {
-    key: string
-    query: DataViewQueryInput
-    content?: never
-    links?: never
-}
+  key: string;
+  query: DataViewQueryInput;
+  content?: never;
+  links?: never;
+};
 
-export type ArticleSection = ArticleTextSection | ArticleQuerySection
+export type ArticleSection = ArticleTextSection | ArticleQuerySection;
 
 export type SectionContentProps = {
-    title: string
-    content: string
-    links?: ArticleLink[]
-}
+  title: string;
+  content: string;
+  links?: ArticleLink[];
+};
 
-export type ArticleSectionProps = SectionContentProps
+export type ArticleSectionProps = SectionContentProps;
 
 export type MetadataProperties = {
-    image?: string
-    [key: string]: string | undefined
-}
+  image?: string;
+  [key: string]: string | undefined;
+};
 
 export type MetadataSummaryProps = {
-    name: string
-    key?: string
-    href?: string
-    metadata?: MetadataProperties
-}
+  name: string;
+  key?: string;
+  href?: string;
+  metadata?: MetadataProperties;
+};
 
 export type ArticleProps = MetadataSummaryProps & {
-    sections?: ArticleSection[]
-}
+  sections?: ArticleSection[];
+};
 
 export type SectionSelectorProps = {
-    section: ArticleSection
-}
+  section: ArticleSection;
+};
 
 export type NavigationDataItem = {
-    key?: string
-    name: string
-    list?: NavigationDataItem[]
-    metadata?: MetadataProperties
-    sections?: ArticleSection[]
-    [key: string]: unknown
-}
+  key?: string;
+  name: string;
+  list?: NavigationDataItem[];
+  metadata?: MetadataProperties;
+  sections?: ArticleSection[];
+  [key: string]: unknown;
+};

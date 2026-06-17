@@ -1,105 +1,106 @@
-import React, { useEffect, useRef, useState } from 'react'
-import LateralBar from './components/LateralBar/LateralBar'
-import Article from './components/Article/Article'
-import { getArticleByName } from './utils/dataService'
-import { navigateToPath, parseAppRoute } from './utils/navigation'
+import React, { useEffect, useRef, useState } from 'react';
+import LateralBar from './components/LateralBar/LateralBar';
+import Article from './components/Article/Article';
+import { getArticleByName } from './utils/dataService';
+import { navigateToPath, parseAppRoute } from './utils/navigation';
 
 function formatSectionLabel(section) {
   if (!section) {
-    return 'Overview'
+    return 'Overview';
   }
 
   return section
     .split('-')
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(' ')
+    .join(' ');
 }
 
 function App() {
   const [currentRoute, setCurrentRoute] = useState(() =>
-    parseAppRoute(window.location.pathname)
-  )
-  const [activeArticle, setActiveArticle] = useState(null)
-  const [isNavCollapsed, setIsNavCollapsed] = useState(false)
-  const [loading, setLoading] = useState(false)
-  const routeRequestId = useRef(0)
+    parseAppRoute(window.location.pathname),
+  );
+  const [activeArticle, setActiveArticle] = useState(null);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const routeRequestId = useRef(0);
 
   useEffect(() => {
     const syncFromLocation = async () => {
-      const requestId = ++routeRequestId.current
-      const nextRoute = parseAppRoute(window.location.pathname)
+      const requestId = ++routeRequestId.current;
+      const nextRoute = parseAppRoute(window.location.pathname);
 
-      setCurrentRoute(nextRoute)
+      setCurrentRoute(nextRoute);
 
       if (nextRoute.category && nextRoute.articleSlug) {
-        setLoading(true)
+        setLoading(true);
 
         try {
           const article = await getArticleByName(
             nextRoute.category,
-            nextRoute.articleSlug
-          )
+            nextRoute.articleSlug,
+          );
 
           if (routeRequestId.current !== requestId) {
-            return
+            return;
           }
 
-          setActiveArticle(article)
+          setActiveArticle(article);
         } catch (error) {
           if (routeRequestId.current === requestId) {
-            setActiveArticle(null)
+            setActiveArticle(null);
           }
         } finally {
           if (routeRequestId.current === requestId) {
-            setLoading(false)
+            setLoading(false);
           }
         }
 
-        return
+        return;
       }
 
-      setActiveArticle(null)
-      setLoading(false)
-    }
+      setActiveArticle(null);
+      setLoading(false);
+    };
 
     const handlePopState = () => {
-      syncFromLocation()
-    }
+      syncFromLocation();
+    };
 
-    syncFromLocation()
-    window.addEventListener('popstate', handlePopState)
+    syncFromLocation();
+    window.addEventListener('popstate', handlePopState);
 
     return () => {
-      window.removeEventListener('popstate', handlePopState)
-      routeRequestId.current += 1
-    }
-  }, [])
+      window.removeEventListener('popstate', handlePopState);
+      routeRequestId.current += 1;
+    };
+  }, []);
 
   // Handle section or article selection from navigation
   const handleSelect = (key) => {
     if (!key) {
-      navigateToPath('/')
-      return
+      navigateToPath('/');
+      return;
     }
 
     if (key.startsWith('/')) {
-      navigateToPath(key)
-      return
+      navigateToPath(key);
+      return;
     }
 
     if (key.includes('.')) {
-      navigateToPath(`/${key.replace('.', '/')}`)
-      return
+      navigateToPath(`/${key.replace('.', '/')}`);
+      return;
     }
 
-    navigateToPath(key === 'overview' ? '/' : `/${key}`)
-  }
+    navigateToPath(key === 'overview' ? '/' : `/${key}`);
+  };
 
-  const selectedItemKey = currentRoute.category && currentRoute.articleSlug
-    ? `${currentRoute.category}.${currentRoute.articleSlug}`
-    : null
+  const selectedItemKey =
+    currentRoute.category && currentRoute.articleSlug
+      ? `${currentRoute.category}.${currentRoute.articleSlug}`
+      : null;
 
-  const sectionLabel = formatSectionLabel(currentRoute.section)
+  const sectionLabel = formatSectionLabel(currentRoute.section);
 
   return (
     <div className={`app-shell ${isNavCollapsed ? 'nav-collapsed' : ''}`}>
@@ -132,7 +133,7 @@ function App() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
