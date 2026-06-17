@@ -1,0 +1,296 @@
+{
+    "factions": [
+        {
+            "name": "The Bibliotheca of Ages",
+            "metadata": {
+                "Emblem": "All members of the bibliotheca carry a pendant with an eye encased in a regular heptagram, wether hidden or not depends on their office",
+                "Vestments": "Official acting members of the bibliotheca wear cerulean robes, dyed with cobalt and often trimmed in gold",
+                "Leader/s": "Most people even within the Bibliotheca do not know the bibliothecarians by name, but know there are 7 powerful mages ruling the bibliotheca from the shadows."
+            },
+            "sections": [
+                {
+                    "key": "History",
+                    "content": "The Bibliotheca of Ages is the last standing guild in the land of Mercia. It was formed in the year 372 A.F.L. with the signage of [[The Accords of Fendras]] between the major kingdoms, the burgeoning [[Church of Twilight]] and the larger surviving guilds after the [[Catarinian Crusades]]. The remaining guilds joined forces to form the bibliotheca, to fulfill their obligations under the accords and protect the [[mageborn]].",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        },
+                        {
+                            "name": "Church of Twilight",
+                            "url": "/factions/the-church-of-twilight"
+                        },
+                        {
+                            "name": "Catarinian Crusades",
+                            "url": "/miscelaneous/the-catarinian-crusades"
+                        },
+                        {
+                            "name": "mageborn",
+                            "url": "/guides/mageborn"
+                        }
+                    ]
+                },
+                {
+                    "key": "Organization",
+                    "content": "The Bibliotheca of Ages is a very distributed organization in the day to day management of the different libraries dispersed throughout the continent. Each library is managed by a <i>Curator of Philosopha Sublimatio</i>, furthering the goals of the elusive mages above them, the <i>Bibliothecarians of the Aevum.</i>\n\nBelow the greater mages of the bibliotheca, the circle a mage has mastered determins their rank. Those who have mastered the third circle are granted the title of <i>Archivist of the Primus Hypothesis</i>, while the rest of the mages that are considered adult carry the title of <i>Concierge of the Arcanum Scriptorum</i>.\n\nSince the Bibliotheca is first and formost — if in appearance only — an institution of learning and caring for mageborn, most libraries are structured like a school, with the archives and classrooms in the lower floors and a number of appartments in the upper floors. In some cities where a larger library is impossible, the bibliotheca provides lodging for students outside of their libraries in favour of the arcane laboratoriums and other facilities."
+                },
+                {
+                    "key": "The Forfeiture Rule",
+                    "content": "One of the laws established by [[The Accords of Fendras]] makes any mageborn of noble birth ineligible to inherit titles or own any land. It has caused a myriad of problems for many families and in some instances been used for marriable nullities in order to generate new heirs.",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        }
+                    ]
+                },
+                {
+                    "key": "Mageborn Conscription",
+                    "content": "Another law established by [[The Accords of Fendras]]. By order of this law, the Bibliotheca has not only the authority but also the responsability to conscript any mageborn. There are a number of itinerant mages that traverse the continent in search for mageborn to bring to the Bibliotheca. The inherent danger untutored mageborn present to the common folk has historically been enough for people to surrender their children to the mage guild, but there are a number of historical incidents of parents hiding their child's condition, often with disastrous results.",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        }
+                    ]
+                },
+                {
+                    "key": "The Principle of Equal Opportunity",
+                    "content": "The third major law established by [[The Accords of Fendras]] is that of equal opportunity, mandating that whenever the Bibliotheca offers a service to one crown it must offer the same services to every other kingdom for the same price. This was done in order to avoid a sorcerer king by proxy, and it has shaped the ways in which the bibliotheca interfaces with nobility across Mercia.",
+                    "links": [
+                        {
+                            "name": "The Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        }
+                    ]
+                },
+                {
+                    "key": "Maesters of the Bibliotheca",
+                    "content": "At around the turn of the seventh century, the figure of the Maester became well entrenched in the society of the continent. As a result of the principl of Equal Opportunity, the Bibliotheca lent some mages to the crowns, but as time went on, a number of civil wars gave the bibliothecarians the idea of expanding this figure of the \"envoy\" extended beyond crowns and into nobility. It also gave the nobles spurned by the forfeiture rule an opportunity to reclaim their heirs as Maesters.\n\nA maester is an envoy of the bibliotheca that provides spellcasting and archival services to a noble family, they also offer the services of the bibliotheca in the purchase of magical artifacts or greater spells. Maesters usually hold some sort of loyalty to the family they serve, as the title is usually lifelong, but they also serve as spies and informants for the Bibliotheca."
+                },
+                {
+                    "key": "Notable Members",
+                    "query": {
+                        "domain": "characters",
+                        "filters": {
+                            "shouldInclude": [
+                                "Bibliotheca of Ages"
+                            ],
+                            "shouldExclude": []
+                        },
+                        "dataFields": [
+                            "race",
+                            "gender",
+                            "pronouns",
+                            "titles",
+                            "location"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "The Church of Twilight",
+            "metadata": {},
+            "sections": [
+                {
+                    "key": "History",
+                    "content": "The church of twilight appeared very soon into the existance of the continent. Within the first fifty years, the martyrdom of [[Saint Christine]] and [[Saint Charity]] had already become fundational myths of the theology of the Twilight. The fact that several artifacts seeming to have miraculous powers related to the moon and the sun had been discovered, and the unearthing of several ruins of Mercadian origin that supported the deific dyad of night and day in figures that were mythical even before the first landing gave more weight to a burgeoning faith. The Church of Twilight was officially stablished near the end of the first century, but they were not particularly important amongst the many early cults until the turn of the second century, with the rise of several sorcerer kings.\n\nThe Church of Twilight became more militaristic under the influence of [[Saint Catherine]], a righteous zealot that attracted many common folk under the banner of the Catherinian Crusade, the first of four inquisitorial wars waged against the sorcerer kings. It was also at this time that the curch became a female centric order, in part due in response to the aristocracies' misoginy throughout the Astorian coasts and the southern kingdoms.\n\nAfter the signage of the [[Accords of Fendras]], ushered in part by the later known as [[Saint Cecilia]], first Lady of Radiance of the church, the more militaristic orders downsized and the church veered into expanding influence through their newfound hold on the populace.",
+                    "links": [
+                        {
+                            "name": "Saint Christine",
+                            "url": "/religions/saint-christine"
+                        },
+                        {
+                            "name": "Saint Charity",
+                            "url": "/religions/saint-charity"
+                        },
+                        {
+                            "name": "Saint Catherine",
+                            "url": "/religions/saint-catherine"
+                        },
+                        {
+                            "name": "Accords of Fendras",
+                            "url": "/miscelaneous/the-accords-of-fendras"
+                        },
+                        {
+                            "name": "Saint Cecilia",
+                            "url": "/religions/saint-cecilia"
+                        }
+                    ]
+                },
+                {
+                    "key": "Canon and Schisms",
+                    "content": "The Church of Twilight follows the doctrines that form part of the [[Canon of Twilight]]. However, most of these dogmas have not remained consistent throughout the almost 10 centuries of the church.\n\nThe cults around the [[First Paladin]] started to gain a large following in the second century, some of the followers of the first paladin rejected her past mortalhood, convinced that she was a deity, though subservient to the mothers. This was one of the first schisms of the twilight, though the resulting church fell somewhat to obscurity. This schism caused the church to slightly obscure the features of the paladin that became more emblematic of the apostatic [[Cult of the Silver Huntress]].\n\nOriginating in the southern kingdoms, [[The Eclipse Apostasy]] posited that the mothers where in fact only one deity, this led to a culling within the church of anyone adscribing to these beliefs and the purging of whatever records explained the doctrine.\n\nAfter the Concordat of Asteenor, a new dogma has been introduced into the cannon, though it's highly controversial and it hasn't seen mainstream acceptance from the church. The Denomination of the Three, a canonical addition that threatens a new schism, adds a new deity to the pantheon, [[The Daughter]].",
+                    "links": [
+                        {
+                            "name": "Canon of Twilight",
+                            "url": "/religions/the-canon-of-twilight"
+                        },
+                        {
+                            "name": "First Paladin",
+                            "url": "/religions/saint-clara"
+                        },
+                        {
+                            "name": "Cult of the Silver Huntress",
+                            "url": "/religions/the-old-ways"
+                        },
+                        {
+                            "name": "The Eclipse Apostasy",
+                            "url": "/religions/the-eclipse-apostasy"
+                        },
+                        {
+                            "name": "The Daughter",
+                            "url": "/religions/the-daughter"
+                        }
+                    ]
+                },
+                {
+                    "key": "Organization",
+                    "content": "The Church of Twilight is a highly hierarchical organization. The <i>Lady of Radiance</i> and <i>Mistress of Stars</i> are the heads of the church, and rulers of the [[Diarchy of Mù Shěng]]. Each of the mayor kingdoms is the responsability of an <i>Evenmaiden</i>, who usually rules from a cathedral. They fraction their territories however they see fit, leaving each diocese in the hands of a <i>Canoness</i>. Each temple within a diocese has a different structure based on the size and function of the temple.\n\nAbbeys are controlled by an <i>Abbess</i>, priories are controlled by a <i>Prioress</i> and chapels fall under the purview of <i>Maidens</i>. Within each of these temples, the <i>Priests</i> fullfil more proselytizing roles, helping guide their communities in the ways of twilight, while the <i>Novices</i> do the more menial tasks while learning theology, philosophy and try to gain the favour of the mothers to be able to perform miracles.\n\nMen within the church can only fulfill the roles of novices and priests, or a roughly equivalent role within one of the militant orders.",
+                    "links": [
+                        {
+                            "name": "Diarchy of Mù Shěng",
+                            "url": "/kingdoms/diarchy-of-mu-sheng"
+                        }
+                    ]
+                },
+                {
+                    "key": "Orders of the Twilight",
+                    "content": "The Church of Twilight has several specialized orders. Most of them report to the local clerical authority where they find themselves, the majority of these orders are more militaristic and openly known, though some of them act in the shadows and are unknown to most people.\n- [[The Moon Templars]]\n- [[The Knights of the Everburning Star]].\n- [[The Veiled Vestals]]",
+                    "links": [
+                        {
+                            "name": "The Moon Templars",
+                            "url": "/factions/the-moon-templars"
+                        },
+                        {
+                            "name": "The Knights of the Everburning Star",
+                            "url": "factions/the-knights-of-the-everburning-star"
+                        },
+                        {
+                            "name": "The Veiled Vestals",
+                            "url": "/factions/the-veiled-vestals"
+                        }
+                    ]
+                },
+                {
+                    "key": "Crusades and the Inquisiton"
+                },
+                {
+                    "key": "Notable Members",
+                    "query": {
+                        "domain": "characters",
+                        "filters": {
+                            "shouldInclude": [
+                                "Church of Twilight"
+                            ],
+                            "shouldExclude": []
+                        },
+                        "dataFields": [
+                            "race",
+                            "gender",
+                            "pronouns",
+                            "titles"
+                        ]
+                    }
+                },
+                {
+                    "key": "Places of Interest",
+                    "query": {
+                        "domain": "buildings",
+                        "filters": {
+                            "shouldInclude": [
+                                "Church of Twilight"
+                            ],
+                            "shouldExclude": []
+                        }
+                    }
+                }
+            ],
+            "list": [
+                {
+                    "name": "The Moon Templars",
+                    "metadata": {},
+                    "sections": [
+                        {
+                            "key": "History",
+                            "content": "Originally called <i>The Night's Inquisition</i>, the order was founded in the winter of 365 A.F.L, in the city of Cannalis, in the southern Astorian fields. With [[Catarina]] (later adapted to its gothic form Catherine) and her wife [[Alexandra Iulia of Kadesh]], who had witnessed first hand the horrors of what uncontrolled arcana running amok of her hometown had caused.\n\nCatarina adopted the title of Witch Hunter General while Alexandra took the title of High inquisitor. Their fervour attracted the attention of many common folk, specially those living in the northern cities, and soon the lines of the inquisition were many and it spanned several abbeys, their leaders taking the title of Inquisitors. The order moved in small squadrons, each led by a Witch Hunter Knight, a Maiden and a Priest, and accompanied by a small retinue of knight templars.\n\nAfter the death of the High Inquisitor and the destruction of the [[Moonlit Abbey]] in 369 A.F.L, Catarina became a fanatic completely devoted to her crusade of ending the witch kings of [[Takht-e Golha]] and [[Kadesh]] and her methods became even more extreme, quickly resorting to extreme torture and executions, and the order became a more fringe sector of the church, slowly losing some support even within the church.\n\nAfter the death of Caterina, the order fell to oblivion, though it was kept alive by her right hand woman, [[Syr Angela Columbina]], but it saw some resurgence after the [[Accords of Fendras]], when it became an integral tool of the church to keep oversight of the [[Bibliotheca]]. In the following centuries, the canonization of [[Saint Catherine]] kept the order relevant. It was also in this later time that it became the only knight order exclusively formed of women.",
+                            "links": [
+                                {
+                                    "name": "Catarina",
+                                    "url": "/religions/saint-catherine"
+                                },
+                                {
+                                    "name": "Alexandra Iulia of Kadesh",
+                                    "url": "/characters/alexandra-iulia-of-kadesh"
+                                },
+                                {
+                                    "name": "Moonlit Abbey",
+                                    "url": "/buildings/moonlit-abbey"
+                                },
+                                {
+                                    "name": "Takht-e Golha",
+                                    "url": "/kingdoms/takht-e-golha"
+                                },
+                                {
+                                    "name": "Kadesh",
+                                    "url": "/kingdoms/kadesh"
+                                },
+                                {
+                                    "name": "Syr Angela Columbina",
+                                    "url": "/characters/syr-angela-columbina"
+                                },
+                                {
+                                    "name": "Accords of Fendras",
+                                    "url": "/miscelaneous/the-accords-of-fendras"
+                                },
+                                {
+                                    "name": "Bibliotheca",
+                                    "url": "/factions/the-bibliotheca-of-ages"
+                                },
+                                {
+                                    "name": "Saint Catherine",
+                                    "url": "/religions/saint-catherine"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Notable Members",
+                            "query": {
+                                "domain": "characters",
+                                "filters": {
+                                    "shouldInclude": [
+                                        "Moon Templars"
+                                    ],
+                                    "shouldExclude": []
+                                },
+                                "dataFields": [
+                                    "race",
+                                    "gender",
+                                    "pronouns",
+                                    "titles",
+                                    "location"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "The Veiled Vestals",
+                    "metadata": {},
+                    "sections": [
+                        {
+                            "key": "Lore",
+                            "content": "The Veiled Vestals are a faction within the [[Church of Twilight]]. Unknown to most except the Evenmaidens, the Lady of Radiance and the Mistress of Stars. It is a secretive order of clerics committed to unravelling the deepest secrets of the church and safeguarding concealed artifacts along with this hidden knowledge.\n\nEvery member of the order takes an oath of silence, their voice never to be heard by anyone other than the highest charges of the church. New members induct themselves into the order, as codes and cyphers are one of the most important aspects of becoming part of the vestals, prospect acolytes must discover the order itself, through secret codes alluding to the existence of the order within temples and scripture in the oldest chapels and hermits of Twilight, decipher the secrets to the rituals of the Veil of Secrets and the invocation of the Vow of Muteness.\n\nThe Veiled Vestals lack proper temples and mostly hide in plain sight, keeping the rituals and hidden artifacts to long forgotten crypts, abandoned wings of abbeys and hidden basements. These chambers, known in the texts as <i>Sepulchres of Silence</i> are usually protected by ancient rituals, only unlocked by deciphering a code without using one's voice."
+                        }
+                    ]
+                },
+                {
+                    "name": "The Knights of the Everburning Star",
+                    "metadata": {},
+                    "sections": []
+                }
+            ]
+        }
+    ]
+}

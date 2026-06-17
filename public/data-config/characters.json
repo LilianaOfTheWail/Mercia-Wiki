@@ -1,0 +1,29 @@
+{
+  "characters": [
+    {
+      "name": "Aelfstan Fairburne",
+      "metadata": {
+        "title": "Monarch of Glowstowe",
+        "tags": "Glowstowe, Duchy of Weststead",
+        "house": "House of Dawn",
+        "status": "Alive",
+        "race": "Dwarf",
+        "gender": "Male",
+        "pronouns": "He/Him"
+      }
+    },
+    {
+      "name": "Marianne Laflèche",
+      "metadata": {
+        "race": "Human",
+        "gender": "Female",
+        "pronouns": "She/Her",
+        "title": "Baroness of Ste. Christine-aux-forêts",
+        "tags": "Carvagne",
+        "house": "House Laflèche",
+        "status": "Alive",
+        "image": "assets/characters/marianne-lafleche.jpg"
+      }
+    }
+  ]
+}

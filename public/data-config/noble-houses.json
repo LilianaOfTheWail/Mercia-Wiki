@@ -1,0 +1,18 @@
+{
+  "noble-houses": [
+    {
+      "name": "House of Dawn",
+      "metadata": {
+        "house-seat": "Glowstowe",
+        "status": "Ruling house of Glowstowe"
+      }
+    },
+    {
+      "name": "House Laflèche",
+      "metadata": {
+        "house-seat": "Ste. Christine-aux-forêts",
+        "status": "An aristocratic house of Carvagne"
+      }
+    }
+  ]
+}

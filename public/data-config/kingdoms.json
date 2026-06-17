@@ -1,0 +1,282 @@
+{
+    "kingdoms": [
+        {
+            "name": "Glowstowe",
+            "metadata": {
+                "location": "South of the Continet",
+                "capital": "The city of [[Dawnbury]], located in the [[Duchy of Weststead]].",
+                "ruler": "[[House of Dawn]], with [[Aelfstan Fairburne]] as the current monarch.",
+                "image": "assets/kingdoms/glowstowe.png"
+            },
+            "sections": [
+                {
+                    "key": "Geopolitical Organization",
+                    "content": "The Kingdom of Glowstowe is a mainly feudal kingdom, where the [[Crown of Dawn]] holds the highest power. The rest of the houses are structured in a very hierarchal manner, whereupon a few families whose blood can be tracked to the first settlers are responsible for large expanses of land called duchies and relinquish the day to day activities to lesser nobles, who rule over counties.\n\t- [[Duchy of Eaststead]].\n\t- [[Duchy of Weststead]].\n\t- [[Duchy of Southstead]].\n\nLower nobles such as lords usually have minifundium within their states, but never rule over more people than the ones they can personally employ.",
+                    "links": [
+                        {
+                            "name": "Crown of Dawn",
+                            "url": ""
+                        },
+                        {
+                            "name": "Duchy of Eaststead",
+                            "url": "/kingdoms/duchy-of-eaststead"
+                        },
+                        {
+                            "name": "Duchy of Weststead",
+                            "url": "/kingdoms/duchy-of-weststead"
+                        },
+                        {
+                            "name": "Duchy of Southstead",
+                            "url": "/kingdoms/duchy-of-southstead"
+                        }
+                    ]
+                },
+                {
+                    "key": "Religious Affiliations",
+                    "content": "The kingdom of Glowstowe has a very deep relationship with the [[Church of Twilight]], and although the [[Denomination of the Three]] has gained some representation in the last decades, many still look at the statues of the first daughter with fear and superstition. The cult to any other deity is currently restricted within the kingdom, including the worship of the [[Pagan Gods of Astoria]], and specially the [[Beliefs of Apostasy]].",
+                    "links": [
+                        {
+                            "name": "Church of Twilight",
+                            "url": ""
+                        },
+                        {
+                            "name": "Denomination of the Three",
+                            "url": ""
+                        },
+                        {
+                            "name": "Pagan Gods of Astoria",
+                            "url": ""
+                        },
+                        {
+                            "name": "Beliefs of Apostasy",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "Geo-economics",
+                    "content": "The land of Glowstowe is scarred by mountain ridges and rivers that serve as geological frontiers used to separate the different political regions. However, this favours a rich and fertile land that lives off its production of barley and wheat, alongside other finer products such as cheese and brews. The most famous exports of these lands are silks, cotton and wool, as it is the main purveyor of textiles within the continent.\n\nNotably, one of the biggest exports of Glowstowe is salted fish, which is entirely produced in the Southstead.\n\nIn ages before the [[Holy Wars of Therastur]], the land was famous for it's exported wines, now that the [[County of Dawnmire]] has been destroyed, these wines have become exceedingly rare and cost a small fortune. In the years since the loss of the [[Duchy of Eaststead]], the crown has been forced to import large quantities of stone building materials through the wilds of [[Drunn]], which has left the crown in huge debt to both [[Astoria]] and the [[Diarchy of Mù Shěng]].",
+                    "links": [
+                        {
+                            "name": "Holy Wars of Therastur",
+                            "url": ""
+                        },
+                        {
+                            "name": "County of Dawnmire",
+                            "url": ""
+                        },
+                        {
+                            "name": "Drunn",
+                            "url": ""
+                        },
+                        {
+                            "name": "Astoria",
+                            "url": ""
+                        },
+                        {
+                            "name": "Diarchy of Mù Shěng",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "Society",
+                    "content": "The lands of Glowstowe vary greatly from the more stoic people of the Eaststead, to the rougher folk of the Southstead, however most people share a few cultural traits. Namely, the inhabitants of the kingdom share a deep distrust of the arcane and an ingrained superstition of the occult, and revere the mother goddesses devoutly, so that their crops may grow and their sleep be restful. This is somewhat less extreme in the south, where folk legends are more ingrained in the collective imaginary.\n\nThe majority of people live simple lives, working for the houses of the noble lords that rule their lives in exchange for a payment either in kind or in coin. And although most people live relatively happy and comfortable lives, the more ambitious individuals leave these lives to join the army, in hopes of being knighted, or in the best of cases, achieving such a feat that they can become lords of a small patch of land somewhere.\n\nThe common folk generally believe in the divine right of rulership, that is, that the nobler of families are direct descendants from heroes, angels and saints, and thus have the right to rule over the masses, and that nobiliary titles can only be obtained through the canon of the church by performing small miracles. In this aspect, the nobility of Glowstowe have a duty, at least performative, towards the [[Church of Twilight]] and the separation between church and state is as fickle as [[The Concordat of Asteenor]] allows.",
+                    "links": [
+                        {
+                            "name": "Church of Twilight",
+                            "url": ""
+                        },
+                        {
+                            "name": "The Concordat of Asteenor",
+                            "url": ""
+                        }
+                    ]
+                }
+            ],
+            "list": [
+                {
+                    "name": "Duchy of Eaststead",
+                    "metadata": {},
+                    "sections": [
+                        {
+                            "key": "Characters",
+                            "query": {
+                                "domain": "characters",
+                                "filters": {
+                                    "shouldInclude": [
+                                        "Duchy of Eaststead"
+                                    ],
+                                    "shouldExclude": []
+                                },
+                                "dataFields": [
+                                    "race",
+                                    "gender",
+                                    "pronouns",
+                                    "titles"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Duchy of Weststead",
+                    "metadata": {},
+                    "sections": []
+                },
+                {
+                    "name": "Duchy of Southstead",
+                    "metadata": {},
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "name": "Astoria",
+            "metadata": {
+                "location": "northwest of the Continent",
+                "capital": "",
+                "ruler": "",
+                "image": "assets/kingdoms/astoria.jpg"
+            },
+            "sections": [],
+            "list": [
+                {
+                    "name": "Asteenor",
+                    "metadata": {
+                        "location": "",
+                        "capital": "Asteenor",
+                        "ruler": "",
+                        "image": ""
+                    },
+                    "sections": [
+                        {
+                            "key": "Geopolitical Organization",
+                            "content": ""
+                        },
+                        {
+                            "key": "Religious Affiliations",
+                            "content": ""
+                        },
+                        {
+                            "key": "Geo-economics",
+                            "content": ""
+                        },
+                        {
+                            "key": "Society",
+                            "content": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Takht-e Golha",
+                    "metadata": {
+                        "location": "",
+                        "capital": "Takht-e Golha",
+                        "ruler": "",
+                        "image": ""
+                    },
+                    "sections": [
+                        {
+                            "key": "Geopolitical Organization",
+                            "content": ""
+                        },
+                        {
+                            "key": "Religious Affiliations",
+                            "content": ""
+                        },
+                        {
+                            "key": "Geo-economics",
+                            "content": ""
+                        },
+                        {
+                            "key": "Society",
+                            "content": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Kadesh",
+                    "metadata": {
+                        "location": "",
+                        "capital": "Kadesh",
+                        "ruler": "",
+                        "image": ""
+                    },
+                    "sections": [
+                        {
+                            "key": "Geopolitical Organization",
+                            "content": ""
+                        },
+                        {
+                            "key": "Religious Affiliations",
+                            "content": ""
+                        },
+                        {
+                            "key": "Geo-economics",
+                            "content": ""
+                        },
+                        {
+                            "key": "Society",
+                            "content": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Carvagne",
+                    "metadata": {
+                        "location": "",
+                        "capital": "Crepuscule",
+                        "ruler": "",
+                        "image": "assets/kingdoms/carvagne.webp"
+                    },
+                    "sections": [
+                        {
+                            "key": "Geopolitical Organization",
+                            "content": "Carvagne is a hereditary monarchy, passed through the matrilineal line. Despite its recent adherence to the Astorian federation, most bureaucracy has remained in the hands of the five noble families that founded the kingdom. All houses except for the royal house have patrilineal lines. This apparently strange disconnect between houses is nothing more than a cunning strategy to keep power in the same family regardless of the house of the consort, something that the rest of the noble families accept if only to keep power away from their opponents."
+                        },
+                        {
+                            "key": "Religious Affiliations",
+                            "content": "Carvagne is amongst the more crepuscular of the city states. Their long-running wars against the sorcerer kings of Kadesh between the 2nd and 4th centuries solidified a strong presence of the Church of Twilight in the then kingdom. Adherence to the rules of the federation has come with an openness to other religions that most locals resent. Aside from a few pagan temples throughout the city of Crepuscule, most settlements throughout the kingdom have solely a church or chapel to the Twilight goddesses and their saints.\n\nThere is a small number of nature cults in the more remote villages, mostly to [[The Morrigan]], [[The Silver Huntress]] and [[The Famished One]], as well as a few small communities of witches that have existed at the fringes of Carvagnan society for centuries. Most commonly the common folk accepts their existence and even come to their aid when traversing the deepest paths of the forests, so long as they don't bother the priests and there is no cause for accusation."
+                        },
+                        {
+                            "key": "Geo-economics",
+                            "content": "If there is a city-state notorious for its exports, it is without a doubt Carvagne and the numerous vintages it produces. The giant valley has enough fluvial activity to sustain a large number of vineyards and wine has become a core part of the culture of the land. Rivalries between towns and villages fuel centuries-old grudges, a number of regional contests take place every harvest season and the most proficient winemakers are regarded with respect by common folk and noblemen alike.\n\nThe people of Carvagne are hunters both by trade and for sport. They enjoy game meat almost as much as comparing the size of their prey, and in recent years many noblemen from other city states have brought an influx of money to the towns where the larger prey can be found. Their love for venison and wild boar has led husbandry to focus on swine and while their rivers run full of fish they only consume it when they can find no other food nearby."
+                        },
+                        {
+                            "key": "Society",
+                            "content": "The people of Carvagne live in a liminal land. They hold entrenched superstitions, as a land that has been the origin of multiple legends — such as those of the loup-garou, or the child of faefolk — but also has a long history of permissiveness towards occult forest cults. The deep seated influence of the church has made them wary of magic but not so much of older religious practices that have found a way to flourish amongst the cracks of an otherwise twilight centric society.\n\nThe aristocracy holds a somewhat firm hold on the people through a no small amount of luck, having been somewhat unscathed by the centuries of wars that have been a mainstay of Astorian culture. Their participation in wars has been largely economic, aided in part by their safer location within the region and thus it is not a very militaristic kingdom. The Caravagnans tend to arm more for tournaments than for war, and it's been several centuries since a militia has been needed, resulting in a populace more concerned with their harvests and daily problems than global problems.\n\nNobility has also reached a sort of standstill, giving each other turns to propose a consort king rather than fight. Resulting in a society that refuses to change and adapt to the new challenges imposed by its introduction into the Astorian federation. People are generally wary of foreigners and travellers, and while they will engage them in a drinking contest, they are unlikely to open their homes or their lives to new people, their religions or their way of life."
+                        }
+                    ]
+                },
+                {
+                    "name": "Cannalis",
+                    "metadata": {
+                        "location": "",
+                        "capital": "Cannalis",
+                        "ruler": "",
+                        "image": ""
+                    },
+                    "sections": [
+                        {
+                            "key": "Geopolitical Organization",
+                            "content": ""
+                        },
+                        {
+                            "key": "Religious Affiliations",
+                            "content": ""
+                        },
+                        {
+                            "key": "Geo-economics",
+                            "content": ""
+                        },
+                        {
+                            "key": "Society",
+                            "content": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

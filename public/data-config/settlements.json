@@ -1,0 +1,32 @@
+{
+  "settlements": [
+    {
+      "name": "Dawnbury",
+      "metadata": {
+        "tags": "Glowstowe",
+        "location": "Duchy of Weststead"
+      }
+    },
+    {
+      "name": "Crepuscule",
+      "metadata": {
+        "tags": "Carvagne",
+        "location": "Carvagne"
+      }
+    },
+    {
+      "key": "ste-christine-aux-forets",
+      "name": "Ste. Christine-aux-forêts",
+      "metadata": {
+        "tags": "Carvagne",
+        "location": "Carvagne"
+      },
+      "sections": [
+        {
+          "key": "Location and Description",
+          "content": "Ste. Christine-aux-forêts is a large town nestled into the southern edge of the Pleurentes Montagnes range, surrounded by deep pine forests. It's the ancestral home of House Laflèche, one of the aristocratic families of Carvagne. Despite the family living year-round in Crepuscule, they often return to the town to hunt, a sport that is quite important to their identity. The town features a number of successful vineyards sponsored by the Laflèche family, known to produce rather sweet white wines. It is build on an incline, with the upper area enterily reserved for Laflèche Manor, a senorial lodge built in the finest stain woods, in contrast to the more granite-faced architecture of the rest of the town. The town has a number of taverns that stay full all day long. On the outskirts, one of the oldest chapels of the Twilight, the Chapel of Ste. Christine's Martyrdom, is a stark reminder of the town's involvement in the witch hunts of the 3rd and 4th centuries, now devoid of the militaristic nuns, it's become more a point of pilgrimage for those devoted to Saint Christine."
+        }
+      ]
+    }
+  ]
+}
