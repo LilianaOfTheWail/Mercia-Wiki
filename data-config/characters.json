@@ -24,6 +24,15 @@
         "status": "Alive",
         "image": "assets/characters/marianne-lafleche.jpg"
       }
+    },
+    {
+      "name": "Julien Laflèche"
+    },
+    {
+      "name": "Murielle Ombrejonois"
+    },
+    {
+      "name": "Paulette Ombrejonois"
     }
   ]
 }

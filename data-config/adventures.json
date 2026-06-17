@@ -1,0 +1,63 @@
+{
+    "adventures": [
+    {
+      "name": "Secrets of House Laflèche",
+      "sections": [
+        {
+                    "key": "Background",
+                    "content": "In the year 853 A.F.L, not even 10 years before the [[Holy Wars of Therastur]], the kingdom of [[Astoria]] was created: a federation uniting the cities of [[Kadesh]], [[Takht-e Golha]] and [[Cannalis]]. The nearby kingdoms of [[Carvagne]] and [[Asteenor]] joined by the end of the decade, putting an end to a history written in blood. The last century, however, has shifted the focus: from pillage and war to a dangerous political game.\n\nThe federation survives on the thin edge of a blade, threatening to collapse the moment a noble considers themselves spurned... And in the year the Carvagnan crown will be named imperator, [[Queen Murielle Ombrejonois]] has died — presumably of natural causes — leaving the kingdom in shambles. The young princess [[Paulette Ombrejonois]] is yet to be wed, and after several weeks of turmoil, [[Duchess Marianne Laflèche]] has announced the engagement of her only son, [[Julien Laflèche]], to the soon-to-be-crowned queen.\n\nIn celebration, the entourage of [[House Laflèche]] has moved forward their yearly hunting trip to their ancestral home of [[Ste. Christine-aux-forêts]], where they've been indulging in the pleasures of the local vineyards, the luscious — if scarce this time of the year — game meats and a general ambiance of joy. Whether due to caution or nerves, [[Julien Laflèche]] hasn't been seen much, except when the occasion required it.",
+                    "links": [
+                        {
+                            "name": "Astoria",
+                            "url": "/kingdoms/astoria"
+                        },
+                        {
+                            "name": "Kadesh",
+                            "url": "/kingdoms/kadesh"
+                        },
+                        {
+                            "name": "Takht-e Golha",
+                            "url": "/kingdoms/takht-e-golha"
+                        },
+                        {
+                            "name": "Cannalis",
+                            "url": "/kingdoms/cannalis"
+                        },
+                        {
+                            "name": "Carvagne",
+                            "url": "/kingdoms/carvagne"
+                        },
+                        {
+                            "name": "Asteenor",
+                            "url": "/kingdoms/asteenor"
+                        },
+                        {
+                            "name": "Queen Murielle Ombrejonois",
+                            "url": "/characters/murielle-ombrejonois"
+                        },
+                        {
+                            "name": "Paulette Ombrejonois",
+                            "url": "/characters/paulette-ombrejonois"
+                        },
+                        {
+                            "name": "Duchess Marianne Laflèche",
+                            "url": "/characters/marianne-lafleche"
+                        },
+                        {
+                            "name": "Julien Laflèche",
+                            "url": "/characters/julien-lafleche"
+                        },
+                        {
+                            "name": "House Laflèche",
+                            "url": "/noble-houses/house-lafleche"
+                        },
+                        {
+                            "name": "Ste. Christine-aux-forêts",
+                            "url": "/settlements/ste-christine-aux-forets"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
