@@ -11,7 +11,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "jest",
+      "node"
+    ]
   },
-  "include": ["src", "global.d.ts"]
+  "include": [
+    "src",
+    "global.d.ts"
+  ]
 }

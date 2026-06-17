@@ -1,106 +1,208 @@
-import React, { useEffect, useState } from 'react'
-import { router } from '../../utils/router'
+import React, { useEffect, useMemo, useState } from 'react'
 import NestedNavItem, { ListItem } from './NestedNavItem'
 import './LateralBar.css'
+import { getCategoryItems } from '../../utils/dataService'
+import { normalizeKey } from '../../utils/stringUtils'
+import { WIKI_NAV_CONFIG } from '../../common/user-data'
+import type { NavConfigItem } from '../../common/types'
 
 interface LateralBarProps {
   activeKey: string
+  selectedKey?: string | null
   onSelect: (key: string | null) => void
   collapsed: boolean
   onToggle: () => void
 }
 
-interface NavItem {
-  key: string
-  label: string
-  dataSource?: string
-}
+function findNavPath(
+  items: NavConfigItem[],
+  targetKey: string
+): NavConfigItem[] | null {
+  const normalizedTarget = normalizeKey(targetKey)
 
-function LateralBar({ activeKey, onSelect, collapsed, onToggle }: LateralBarProps) {
-  const [expandedKeys, setExpandedKeys] = useState(new Set<string>())
-  const [categoryData, setCategoryData] = useState({})
-  const [loading, setLoading] = useState(false)
-  const [navConfig, setNavConfig] = useState<NavItem[]>([])
+  for (const item of items) {
+    const itemKey = normalizeKey(item.key)
+    const dataSourceKey = item.dataSource ? normalizeKey(item.dataSource) : ''
 
-  // Load navigation config on component mount
-  useEffect(() => {
-    const loadNavConfig = async () => {
-      try {
-        console.log('[LateralBar] Loading nav config...')
-        const response = await fetch('/app-config.json')
-        if (!response.ok) throw new Error('Failed to load app-config.json')
-        const config = await response.json()
-        console.log('[LateralBar] Nav config loaded:', config)
-        setNavConfig(config)
-      } catch (error) {
-        console.error('[LateralBar] Error loading nav config:', error)
-        setNavConfig([])
+    if (itemKey === normalizedTarget || dataSourceKey === normalizedTarget) {
+      return [item]
+    }
+
+    if (item.children && item.children.length > 0) {
+      const childPath = findNavPath(item.children, targetKey)
+      if (childPath) {
+        return [item, ...childPath]
       }
     }
-    loadNavConfig()
-  }, [])
+  }
 
-  // Load category data when activeKey changes
+  return null
+}
+
+function LateralBar({
+  activeKey,
+  selectedKey,
+  onSelect,
+  collapsed,
+  onToggle
+}: LateralBarProps) {
+  const [expandedKeys, setExpandedKeys] = useState(new Set() as Set<string>)
+  const [categoryData, setCategoryData] = useState({} as Record<string, ListItem[]>)
+  const [loading, setLoading] = useState(false)
+
+  const activeNavPath = useMemo(() => findNavPath(WIKI_NAV_CONFIG, activeKey), [activeKey])
+  const activeNavKeys = new Set(
+    activeNavPath?.map((item: NavConfigItem) => item.key) || []
+  )
+  const activeNavItem = activeNavPath ? activeNavPath[activeNavPath.length - 1] : null
+  const activeDataSource = activeNavItem?.dataSource
+
+  useEffect(() => {
+    if (!activeNavPath) {
+      setExpandedKeys(new Set())
+      return
+    }
+
+    const nextExpandedKeys = new Set<string>()
+
+    activeNavPath.forEach((item: NavConfigItem, index: number) => {
+      const isLeaf = index === activeNavPath.length - 1
+      if (!isLeaf || item.children?.length) {
+        nextExpandedKeys.add(item.key)
+      }
+    })
+
+    setExpandedKeys(nextExpandedKeys)
+  }, [activeNavPath])
+
   useEffect(() => {
     const loadCategory = async () => {
-      console.log('[LateralBar] Loading category for activeKey:', activeKey)
-      console.log('[LateralBar] NavConfig:', navConfig)
-      
-      const navItem = (navConfig as NavItem[]).find((item) => item.key === activeKey)
-      console.log('[LateralBar] Found navItem:', navItem)
-      
-      if (!navItem?.dataSource) {
-        console.log('[LateralBar] No dataSource found, clearing category data')
+      if (!activeDataSource) {
         setCategoryData({})
+        setLoading(false)
         return
       }
 
       setLoading(true)
       try {
-        console.log('[LateralBar] Fetching items for dataSource:', navItem.dataSource)
-        const items = await router.getCategoryItems(navItem.dataSource)
-        console.log('[LateralBar] Items loaded:', items)
+        const items = await getCategoryItems(activeDataSource)
         setCategoryData({
-          [navItem.dataSource]: items
+          [activeDataSource]: items
         })
       } catch (error) {
-        console.error('[LateralBar] Error loading category:', error)
         setCategoryData({})
       } finally {
         setLoading(false)
       }
     }
 
-    setExpandedKeys(new Set())
     loadCategory()
-  }, [activeKey, navConfig])
+  }, [activeDataSource])
 
   const handleSectionSelect = (key: string) => {
     setExpandedKeys(new Set())
     onSelect(key)
   }
 
-  const handleNestedItemClick = (itemKey: string, dataSource?: string) => {
-    console.log('[LateralBar] handleNestedItemClick called with itemKey:', itemKey, 'dataSource:', dataSource)
-    
+  const handleGroupToggle = (key: string) => {
     setExpandedKeys((prev: Set<string>) => {
       const next = new Set(prev)
-      if (next.has(itemKey)) {
-        next.delete(itemKey)
+      if (next.has(key)) {
+        next.delete(key)
       } else {
-        next.add(itemKey)
+        next.add(key)
       }
       return next
     })
+  }
+
+  const handleNestedItemClick = (
+    compoundKey: string,
+    dataSource?: string,
+    hasNestedList?: boolean
+  ) => {
+    if (hasNestedList) {
+      setExpandedKeys((prev: Set<string>) => {
+        const next = new Set(prev)
+        if (next.has(compoundKey)) {
+          next.delete(compoundKey)
+        } else {
+          next.add(compoundKey)
+        }
+        return next
+      })
+    }
 
     if (dataSource) {
-      // Create compound key: "kingdoms.glowstowe"
-      const compoundKey = `${dataSource}.${itemKey}`
-      console.log('[LateralBar] Calling onSelect with compoundKey:', compoundKey)
       onSelect(compoundKey)
-    } else {
-      console.log('[LateralBar] No dataSource provided')
     }
+  }
+
+  const renderNavItem = (item: NavConfigItem, depth = 0): React.ReactNode => {
+    const hasChildren = Array.isArray(item.children) && item.children.length > 0
+    const isExpanded = expandedKeys.has(item.key)
+    const isActive = activeNavKeys.has(item.key)
+    const buttonClassName = depth === 0
+      ? `lateral-bar__link${hasChildren ? ' lateral-bar__link--group' : ''}${isActive ? ' active' : ''}`
+      : `lateral-bar__nested-link${hasChildren ? ' lateral-bar__nested-link--group' : ''}${isActive ? ' active' : ''}`
+
+    return (
+      <div key={item.key} className="lateral-bar__nav-item">
+        <button
+          type="button"
+          className={buttonClassName}
+          onClick={() => {
+            if (hasChildren) {
+              handleGroupToggle(item.key)
+              return
+            }
+
+            if (item.dataSource) {
+              handleSectionSelect(item.dataSource)
+              return
+            }
+
+            handleSectionSelect(item.key)
+          }}
+          style={{ paddingLeft: `${1 + depth * 0.75}rem` }}
+        >
+          <span className="lateral-bar__label">{item.label}</span>
+          {hasChildren && (
+            <span className="lateral-bar__group-indicator" aria-hidden="true">
+              {isExpanded ? 'v' : '>'}
+            </span>
+          )}
+        </button>
+
+        {hasChildren && isExpanded && (
+          <div className="lateral-bar__nested-list">
+            {item.children?.map((child) => renderNavItem(child, depth + 1))}
+          </div>
+        )}
+
+        {item.dataSource && isActive && (
+          <div className="lateral-bar__nested-list">
+            {loading ? (
+              <div className="lateral-bar__loading">Loading...</div>
+            ) : categoryData[item.dataSource] && categoryData[item.dataSource].length > 0 ? (
+              categoryData[item.dataSource].map((listItem: ListItem) => (
+                <NestedNavItem
+                  key={listItem.key || listItem.name}
+                  item={listItem}
+                  depth={0}
+                  expandedKeys={expandedKeys}
+                  selectedKey={selectedKey}
+                  dataSource={item.dataSource}
+                  onToggle={handleNestedItemClick}
+                />
+              ))
+            ) : (
+              <div className="lateral-bar__empty">No items</div>
+            )}
+          </div>
+        )}
+      </div>
+    )
   }
 
   return (
@@ -108,47 +210,12 @@ function LateralBar({ activeKey, onSelect, collapsed, onToggle }: LateralBarProp
       <div className="lateral-bar__header">
         <span className="lateral-bar__title">Navigation</span>
         <button className="lateral-bar__toggle" onClick={onToggle}>
-          {collapsed ? '▶' : '◀'}
+          {collapsed ? '>' : '<'}
         </button>
       </div>
 
       <div className="lateral-bar__links">
-        {(navConfig as NavItem[]).map((item) => {
-          const listItems = item.dataSource ? categoryData[item.dataSource] : null
-
-          return (
-            <div key={item.key} className="lateral-bar__section">
-              <button
-                type="button"
-                className={`lateral-bar__link ${item.key === activeKey ? 'active' : ''}`}
-                onClick={() => handleSectionSelect(item.key)}
-              >
-                <span className="lateral-bar__label">{item.label}</span>
-              </button>
-
-              {item.key === activeKey && item.dataSource && (
-                <div className="lateral-bar__nested-list">
-                  {loading ? (
-                    <div className="lateral-bar__loading">Loading...</div>
-                  ) : listItems && listItems.length > 0 ? (
-                    listItems.map((listItem: ListItem) => (
-                      <NestedNavItem
-                        key={listItem.key || listItem.name}
-                        item={listItem}
-                        depth={0}
-                        expandedKeys={expandedKeys}
-                        dataSource={item.dataSource}
-                        onToggle={handleNestedItemClick}
-                      />
-                    ))
-                  ) : (
-                    <div className="lateral-bar__empty">No items</div>
-                  )}
-                </div>
-              )}
-            </div>
-          )
-        })}
+        {WIKI_NAV_CONFIG.map((item: NavConfigItem) => renderNavItem(item))}
       </div>
     </aside>
   )

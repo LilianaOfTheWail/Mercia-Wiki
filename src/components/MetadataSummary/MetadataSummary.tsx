@@ -1,27 +1,24 @@
 import React from 'react'
 import './MetadataSummary.css'
+import { MetadataSummaryProps } from '../../common/types'
+import { buildPublicUrl } from '../../utils/navigation'
 
-interface MetadataProperties {
-  image?: string
-  [key: string]: string | undefined
-}
+function MetadataSummary({ name, metadata }: MetadataSummaryProps) {
+  // If there is no metadata, we don't render the summary at all
+  if (!metadata) {
+    return null
+  }
 
-interface MetadataSummaryProps {
-  name: string
-  properties: MetadataProperties
-}
+  const imageUrl = metadata.image
 
-function MetadataSummary({ name, properties }: MetadataSummaryProps) {
-  const imageUrl = properties.image
-
-  const entries = Object.keys(properties)
+  const entries = Object.keys(metadata)
     .filter(function (key) {
-      return key !== 'image'
+      return key !== 'image' && key !== 'tags'
     })
     .map(function (key) {
       return {
         key: key,
-        value: properties[key] as string
+        value: metadata[key] || ''
       }
     })
 
@@ -33,7 +30,7 @@ function MetadataSummary({ name, properties }: MetadataSummaryProps) {
 
       {imageUrl && (
         <div className="metadata-summary__image-card">
-          <img className="metadata-summary__image" src={imageUrl} alt={name} />
+          <img className="metadata-summary__image" src={buildPublicUrl(imageUrl)} alt={name} />
         </div>
       )}
 

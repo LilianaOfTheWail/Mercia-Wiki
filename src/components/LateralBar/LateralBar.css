@@ -50,9 +50,16 @@
   gap: 0.75rem;
 }
 
+.lateral-bar__nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
 .lateral-bar__link {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   padding: 0.9rem 1rem;
   border: 1px solid transparent;
   border-radius: 0.95rem;
@@ -69,10 +76,21 @@
   border-color: rgba(215, 125, 90, 0.35);
 }
 
+.lateral-bar__link--group {
+  font-weight: 600;
+}
+
 .lateral-bar__label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex: 1;
+}
+
+.lateral-bar__group-indicator {
+  flex-shrink: 0;
+  width: 1rem;
+  text-align: center;
 }
 
 .lateral-bar.collapsed .lateral-bar__title,
@@ -113,6 +131,10 @@
 .lateral-bar__nested-link.active {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(215, 125, 90, 0.25);
+}
+
+.lateral-bar__nested-link--group {
+  font-weight: 600;
 }
 
 .lateral-bar.collapsed .lateral-bar__toggle {

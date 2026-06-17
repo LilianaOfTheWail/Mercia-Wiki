@@ -1,76 +1,111 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import LateralBar from './components/LateralBar/LateralBar'
 import Article from './components/Article/Article'
-import { router } from './utils/router'
+import { getArticleByName } from './utils/dataService'
+import { navigateToPath, parseAppRoute } from './utils/navigation'
+
+function formatSectionLabel(section) {
+  if (!section) {
+    return 'Overview'
+  }
+
+  return section
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ')
+}
 
 function App() {
-  const [activeSection, setActiveSection] = useState('overview')
+  const [currentRoute, setCurrentRoute] = useState(() =>
+    parseAppRoute(window.location.pathname)
+  )
   const [activeArticle, setActiveArticle] = useState(null)
   const [isNavCollapsed, setIsNavCollapsed] = useState(false)
   const [loading, setLoading] = useState(false)
+  const routeRequestId = useRef(0)
 
-  // Initialize router on mount
   useEffect(() => {
-    router.initialize()
+    const syncFromLocation = async () => {
+      const requestId = ++routeRequestId.current
+      const nextRoute = parseAppRoute(window.location.pathname)
+
+      setCurrentRoute(nextRoute)
+
+      if (nextRoute.category && nextRoute.articleSlug) {
+        setLoading(true)
+
+        try {
+          const article = await getArticleByName(
+            nextRoute.category,
+            nextRoute.articleSlug
+          )
+
+          if (routeRequestId.current !== requestId) {
+            return
+          }
+
+          setActiveArticle(article)
+        } catch (error) {
+          if (routeRequestId.current === requestId) {
+            setActiveArticle(null)
+          }
+        } finally {
+          if (routeRequestId.current === requestId) {
+            setLoading(false)
+          }
+        }
+
+        return
+      }
+
+      setActiveArticle(null)
+      setLoading(false)
+    }
+
+    const handlePopState = () => {
+      syncFromLocation()
+    }
+
+    syncFromLocation()
+    window.addEventListener('popstate', handlePopState)
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+      routeRequestId.current += 1
+    }
   }, [])
 
-  // Handle section or article selection
-  const handleSelect = async (key) => {
-    console.log('[App] handleSelect called with key:', key)
-    
+  // Handle section or article selection from navigation
+  const handleSelect = (key) => {
     if (!key) {
-      console.log('[App] Key is empty, resetting to overview')
-      setActiveSection('overview')
-      setActiveArticle(null)
+      navigateToPath('/')
       return
     }
 
-    // Check if it's a compound key (e.g., "kingdoms.glowstowe")
-    if (key.includes('.')) {
-      console.log('[App] Compound key detected, loading article')
-      setLoading(true)
-      try {
-        console.log('[App] Calling router.getArticle with:', key)
-        const article = await router.getArticle(key)
-        console.log('[App] Article returned from router:', article)
-        
-        if (article) {
-          // Extract category from key
-          const category = key.split('.')[0]
-          console.log('[App] Setting active section to:', category)
-          console.log('[App] Setting active article')
-          setActiveSection(category)
-          setActiveArticle(article)
-        } else {
-          console.log('[App] No article returned from router')
-          setActiveArticle(null)
-        }
-      } catch (error) {
-        console.error('[App] Error loading article:', error)
-        setActiveArticle(null)
-      } finally {
-        setLoading(false)
-      }
-    } else {
-      // It's a section key
-      console.log('[App] Section key detected, setting section:', key)
-      setActiveSection(key)
-      setActiveArticle(null)
+    if (key.startsWith('/')) {
+      navigateToPath(key)
+      return
     }
+
+    if (key.includes('.')) {
+      navigateToPath(`/${key.replace('.', '/')}`)
+      return
+    }
+
+    navigateToPath(key === 'overview' ? '/' : `/${key}`)
   }
 
-  const sectionLabel = {
-    overview: 'Overview',
-    kingdoms: 'Kingdoms',
-    characters: 'Characters',
-    locations: 'Locations',
-    lore: 'Lore'
-  }[activeSection]
+  const selectedItemKey = currentRoute.category && currentRoute.articleSlug
+    ? `${currentRoute.category}.${currentRoute.articleSlug}`
+    : null
+
+  const sectionLabel = formatSectionLabel(currentRoute.section)
 
   return (
     <div className={`app-shell ${isNavCollapsed ? 'nav-collapsed' : ''}`}>
       <LateralBar
-        activeKey={activeSection}
+        activeKey={currentRoute.section}
+        selectedKey={selectedItemKey}
         onSelect={handleSelect}
         collapsed={isNavCollapsed}
         onToggle={() => setIsNavCollapsed((value) => !value)}

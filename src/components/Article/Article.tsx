@@ -1,24 +1,7 @@
+import { ArticleProps } from '../../common/types'
 import MetadataSummary from '../MetadataSummary/MetadataSummary'
 import SectionSelector from '../SectionSelector/SectionSelector'
 import './Article.css'
-
-interface ArticleLink {
-  name: string
-  url: string
-}
-
-interface ArticleSection {
-  key: string
-  content?: string
-  links?: ArticleLink[]
-  query?: string
-}
-
-interface ArticleProps {
-  name: string
-  metadata: Record<string, string>
-  sections: ArticleSection[]
-}
 
 function Article({ name, metadata, sections }: ArticleProps) {
   return (
@@ -29,18 +12,17 @@ function Article({ name, metadata, sections }: ArticleProps) {
 
       <div className="article-card__content">
         <div className="article-card__body">
-          {sections.map(function (section) {
+          {sections && sections.map(function (section) {
             return (
               <SectionSelector
                 key={section.key}
                 section={section}
-                locationName={name}
               />
             )
           })}
         </div>
 
-        <MetadataSummary name={name} properties={metadata} />
+        <MetadataSummary name={name} metadata={metadata} />
       </div>
     </article>
   )
