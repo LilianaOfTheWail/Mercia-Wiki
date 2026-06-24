@@ -1,18 +1,6 @@
 {
   "characters": [
     {
-      "name": "Aelfstan Fairburne",
-      "metadata": {
-        "title": "Monarch of Glowstowe",
-        "tags": "Glowstowe, Duchy of Weststead",
-        "house": "House of Dawn",
-        "status": "Alive",
-        "race": "Dwarf",
-        "gender": "Male",
-        "pronouns": "He/Him"
-      }
-    },
-    {
       "name": "Marianne Laflèche",
       "metadata": {
         "race": "Human",
@@ -23,16 +11,161 @@
         "house": "House Laflèche",
         "status": "Alive",
         "image": "assets/characters/marianne-lafleche.jpg"
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Marianne Laflèche is the current Baroness of [[Ste. Christine-aux-forêts]] and head of [[House Laflèche]] after the death of her husband, Silvain Laflèche. She was known to be cheerful before her widowhood, but she is now a stern woman set on keeping her house's standing. She has leveraged her situation to ensure her son's coronation at a time when her house needs it most. This move has also ensured her rule over Ste. Christine-aux-forêts until her grandson is of age — a rather unlikely place of power for a woman of relatively lowly birth, being the second daughter of House Laurens, a banner house of the Laflèches."
+        },
+        {
+          "key": "Appearance",
+          "content": "Marianne is a woman in her late thirties who wears long, demure dresses and covers her head despite having been in mourning for more than 5 years. She is quite tall and somewhat wide, with strong features, a long thin nose, and small pursed lips."
+        }
+      ]
+    },
+    {
+      "name": "Julien Laflèche",
+      "metadata": {
+        "race": "Human",
+        "gender": "Male",
+        "pronouns": "He/Him",
+        "title": "Baron-in-waiting of Ste. Christine-aux-forêts",
+        "tags": "Carvagne",
+        "house": "House Laflèche",
+        "status": "Alive",
+        "image": ""
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Julien is the only son of the late Silvain Laflèche. He is set to be the next king of Carvagne, though he seems more interested in partying and drinking than ruling."
+        },
+        {
+          "key": "Appearance",
+          "content": "Julien is a mousy teenager, 16 years old, with the messy, dirty-blonde locks he inherited from his father, and none of the height or build of his mother. Despite his appearance, he is a charming and funny young man with a permanent smile that has settled divots and marks around his mouth. He shaves regularly, wears stylish clothes despite his messy hair, and has warm brown eyes like his parents."
+        }
+      ]
+    },
+    {
+      "name": "Gérard de Tournoire-sur-Norn",
+      "metadata": {
+        "race": "Halfling",
+        "gender": "Male",
+        "pronouns": "He/Him",
+        "title": "Steward of House Laflèche",
+        "tags": "Carvagne",
+        "house": "House Laflèche",
+        "status": "Alive",
+        "image": ""
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Gérard is a man in his late 60s. Once the butler of House Laurens, [[Baroness Laflèche]] took him to work at the Laflèche estate, where he has become steward of all their properties. He is a somber and serious man who puts the family before all else. His distaste for hunting has been noted on multiple occasions, and his stern way of managing the multiple properties has earned him fame among the staff as a cranky old man."
+        },
+        {
+          "key": "Appearance",
+          "content": "Gérard is a rather short man—even among halflings—with a round nose and beady, discerning eyes. He carries himself with poise and dignity in tightly tailored suits and combed dark hair while bossing people around left and right."
+        }
+      ]
+    },
+    {
+      "name": "Murielle Ombrejonois",
+      "metadata": {
+        "race": "Dwarf",
+        "gender": "Female",
+        "pronouns": "She/Her",
+        "title": "Late Queen of Carvagne",
+        "tags": "Carvagne",
+        "house": "House Laflèche",
+        "status": "Deceased",
+        "image": ""
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Murielle is the recently deceased queen of Carvagne. Given her previous husband's death and her own weak health, she decided not to marry again, leaving it instead to her only daughter to choose a suitable husband among the noblemen of their land. A very accomplished ruler, she will be remembered for a peaceful and prosperous 100-year reign, and the inclusion of the Kingdom of Carvagne into the federation of [[Astoria]]."
+        },
+        {
+          "key": "Appearance",
+          "content": "Murielle was quite tall for a dwarven woman, stout yet beautiful and stylish. In most portraits, she posed in full plate armor covered in golden filigree and extremely complex hairstyles. She favored strong makeup to soften her harsher features, alongside colorful garments."
+        }
+      ]
+    },
+    {
+      "name": "Paulette Ombrejonois",
+      "metadata": {
+        "race": "Human/Dwarf",
+        "gender": "Female",
+        "pronouns": "She/Her",
+        "title": "Princess of Carvagne, Marquess of Crepuscule",
+        "tags": "Carvagne",
+        "house": "House Laflèche",
+        "status": "Alive",
+        "image": ""
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Paulette is the future queen of Carvagne and the daughter of the late Queen Murielle Ombrejonois and the late King Consort Gaëtan Ombrejonois-Blanchard. She is only 15, having been born in the later years of her parents' marriage, mostly thanks to her mother's dwarven biology. She is a somewhat sickly girl, having inherited her mother's propensity for illness and her father's human resilience. Her coronation is being watched with concern over her fitness to provide an heiress for the kingdom, and the conflicts that could arise if she doesn't do so soon."
+        },
+        {
+          "key": "Appearance",
+          "content": "Paulette has taken after her father in appearance, being taller than her mother, chubbier, and more prone to leisurely walking the gardens than taking up a sword and coercing the guards into a bout. She is shier than both her parents, having grown up quite protected from the outside world, but she uses strong makeup like her mother, favors intricate hairstyling, and has impeccable taste in fashion."
+        }
+      ]
+    },
+    {
+      "name": "Claudette la maudite",
+      "metadata": {
+        "race": "Catfolk",
+        "gender": "Female",
+        "pronouns": "She/They",
+        "title": "The Witch of Corbêts",
+        "tags": "Carvagne",
+        "status": "Alive",
+        "image": ""
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Claudette is a witch living in the woods east of [[Ste. Christine-aux-forêts]]. It's no secret that she exists or that the local populace sometimes comes to her for help, but not much is known about her origins or her intentions."
+        }
+      ]
+    },
+    {
+      "name": "Maiden Lucille de Ste. Christine",
+      "metadata": {
+        "race": "Human",
+        "gender": "Female",
+        "pronouns": "She/Her",
+        "title": "Maiden of Twilight, Proctor of the Chapel of Ste. Christine's Martyrdom",
+        "tags": "Carvagne, Twilight",
+        "status": "Alive",
+        "image": ""
+      },
+      "sections": [
+        {
+          "key": "Background",
+          "content": "Lucille is a Glowstowgian woman in her late forties. Not much is known of her origins, but she is a well-respected figure in Ste. Christine-aux-forêts. She has a strong distaste for mageborn, which is probably why she has become Maiden of one of the last standing churches that once served as training grounds for the [[Moon Templars]]. She is strict regarding the teachings of the church, which has made it more difficult to adapt to the more multicultural society of Astoria, but she is a kind woman who, at her core, wants to guarantee salvation for as many of the faithful as possible."
+        },
+        {
+          "key": "Appearance",
+          "content": "Lucille is a strong, tall woman—muscular and clearly proficient with weaponry. She wears the customary robes of the church without much ornament and braids her reddish hair beautifully. Her piercing blue eyes and chiseled cheeks make her a rare sight among the populace of Carvagne, admired by many a faithful."
+        }
+      ]
+    },
+    {
+      "name": "Clovis",
+      "metadata": {
+        "race": "Halfling",
+        "gender": "Male",
+        "pronouns": "He/Him",
+        "title": "Apothecary of La Vieille Teinture in Ste. Christine-aux-forêts",
+        "tags": "Carvagne",
+        "status": "Alive",
+        "image": ""
       }
-    },
-    {
-      "name": "Julien Laflèche"
-    },
-    {
-      "name": "Murielle Ombrejonois"
-    },
-    {
-      "name": "Paulette Ombrejonois"
     }
   ]
 }
